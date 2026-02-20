@@ -1,0 +1,9 @@
+%!TEX root = ../template.tex
+
+\section{Introduction}
+
+Furthermore, integrated monitoring and simulation strategies have become indispensable tools for understanding the hygrothermal dynamics of these spaces~\cite{Camuffo2014}. Environmental monitoring campaigns provide essential data on indoor levels, seasonal variations, and responses to the outdoor climatic conditions.
+
+To complement empirical data, numerical simulation tools such as hygrothermal modelling have proven valuable in predicting indoor environmental behaviour under various scenarios, aiding decision-making processes related to conservation strategies~\cite{Lucchi2018}. Despite their potential, the use of simulation in heritage contexts remains limited, with most applications focused on energy performance in modern buildings~\cite{Iskandar2024}. 
+
+The further exploration of such approaches in the current work offers practitioners an evidence-based methodology to navigate complex environmental assessments to enhance the conservation of organic materials. Accordingly, the present chapter contributes to the field by focusing on three core objectives: \textit{(i)} survey the applicable standards and guidelines related to the preventive conservation of cultural heritage under hygrothermal stress; \textit{(ii)} conduct in situ monitoring of temperature and humidity conditions in selected case studies; and \textit{(iii)} employ dynamic simulation tools to assess hygrothermal behaviour under different scenarios. The goal is to characterise the indoor climate conditions in heritage buildings, evaluate the potential risks to collections, and support more informed and sustainable conservation decisions.

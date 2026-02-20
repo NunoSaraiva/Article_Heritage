@@ -1,0 +1,245 @@
+%!TEX root = ../template.tex
+
+\section{Methodology}
+
+\subsection{Monitoring}
+
+The hygrothermal environment in both case studies was monitored over six years (2018 to 2023) using Onset HOBO UX100-003 hygrometers. These devices recorded \temp{} and \rh{} at 10-minute intervals. Twelve devices operated in the library with operating ranges between -20~\temperature{} and 70~\temperature{} for \temp{} and 15~\percentage{} and 95~\percentage{} for \rh, with accuracies of $\pm$ 0.21~\temperature{} and $\pm$ 3.5~\percentage{}, respectively. The spatial distribution of the sensors throughout the main case study is presented in Fig.\ref{fig:HygroMonit}. The percentage of missing data for each location during the six years is given in Fig.~\ref{fig:BJUC_Monit_Missing}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.80\linewidth]{images/11-hygrothermal/5a.pdf}
+\caption{Floor plans of Joanina Library with the distribution of equipment. The red circles represent the thermo-hygrometers, and the green ones the devices measuring both conditions inside books.}
+\label{fig:HygroMonit}
+\end{figure}
+
+Such monitoring sensors and their data was used to validate the simulation results within the Noble Floor.
+
+Alongside this campaign, an additional type of device was used, given the limited studies that monitor the hygrothermal conditions directly inside collections. For example, \citeauthor{Bulow2002} (\citeyear{Bulow2002}) monitored the hygrothermal conditions both indoors and directly inside dummy books to identify relationships between collections and their surrounding environment, thereby understanding their buffering capabilities. This approach can be adopted to compare measurements with moving averages calculated for \temp{} (7 days) and \rh{} (30 days) following ASHRAE~\cite{ASHRAE2023} recommendations. Thus, several paper hygrometers were directly placed inside a dummy book -- Fig.~\ref{fig:InsideBookDepict}. The devices model was RH5 from Schaller with an accuracy of $\pm$ 0.3~\temperature{} and $\pm$ 1.5~\percentage{} for \rh{} at 25~\temperature. Records were stored every 10 minutes.
+
+ \begin{figure}[!ht]
+   \centering
+   \subfloat[ ]{\includegraphics[width=0.45\linewidth]{images/11-hygrothermal/InsideBook1.PNG}}
+   \hfill
+   \subfloat[ ]{\includegraphics[width=0.45\linewidth]{images/11-hygrothermal/InsideBook2.PNG}}
+  \caption{Monitoring devices placed inside books in location GS1.}
+  \label{fig:InsideBookDepict}
+ \end{figure}
+
+Given the gradual acquisition and installation of paper hygrometers within the library, the monitored periods of these loggers varied depending on the location. Fig.~\ref{fig:HygroMonit} shows the location of all data loggers inside books (green circles). Considering that the North façade was more exposed to higher \rh{}, an effort was made to place devices on this façade in LFP, varying only in their longitudinal placement between Space 1 (closest to the main door), Space 2 (in the middle space) and Space 3 (furthest from the main door). Tab.~\ref{tab:MonitHygro} presents the specifications of the equipment employed during the monitoring campaign, along with the respective recording periods.
+
+\begin{table}[H]
+    \centering
+    \caption{Summary of the two tasks regarding the different type of monitoring.}
+    
+    \begin{tabularx}{\textwidth}{llll}
+    
+    \toprule
+    \textbf{Equipment} & \textbf{Period} & \textbf{Location} & \textbf{Time step} \\ \hline
+     \textbf{Indoor environment} & 1\textsuperscript{st} Jan 2018 & GN1, GN2, GN3 & 10 min              \\
+     HOBO UX100-003 & 31\textsuperscript{st} Dec 2023 & GS1, GS2, GS3 &           \\
+     & & BN1, BN2, BN3 &              \\
+     & & BS1, BS2, BS3 &           \\
+     \cline{1-3}
+     \textbf{Inside books} & 17\textsuperscript{th} Jun 2022 & GS1\textsubscript{IB} &               \\
+     Schaller RH5 & 16\textsuperscript{th} Jun 2023 & &           \\
+     \cline{2-3}    
+     & 16\textsuperscript{th} Jun 2023  & GN1\textsubscript{IB} &               \\
+     & 19\textsuperscript{th} Nov 2023 & &           \\
+     \cline{2-3}& 17\textsuperscript{th} May 2023  & GN2\textsubscript{IB} &               \\
+     & 16\textsuperscript{th} Oct 2023 & &           \\
+     \cline{2-3}
+      & 17\textsuperscript{th} May 2023 & GN3\textsubscript{IB} &               \\
+     & 16\textsuperscript{th} Oct 2023 & &           \\
+    \bottomrule      
+    \end{tabularx}
+    \label{tab:MonitHygro}
+    
+\end{table}
+
+\subsection{Modelling}
+
+%% Modelling template
+
+The building was modelled using EnergyPlus~23.2.0. (started with version 9.2.0, and then updated using IDFVersionUpdater), a dynamic simulation engine developed by the U.S. Department of Energy for the assessment of building energy performance and indoor environmental conditions. The simulation was conducted to evaluate the conservation conditions provided by the indoor environment of the main case study, the Joanina Library.
+
+The building is located in Coimbra, Portugal, where the defined climate zone is \textit{Csb}, as defined by the Köppen-Geiger classification. Two sets of weather files were considered in this work. First, homemade weather files were produced using in-situ measurements for the validation of the simulation model (\href{https://zenodo.org/records/16935716/files/EPW_WeatherFile_Coimbra_2018_2023.zip?download=1}{link}~\cite{Saraiva2025b}). Then, the typical meteorological year (TMY) weather file for Coimbra, sourced from the U.S. Department of Energy database, was used to study with greater detail the hygrothermal dynamics of the building.
+
+The model represents a total floor area of approximately 2150 m\textsuperscript{2}, distributed over three floors. The internal spaces were grouped into 56 thermal zones, based on tourism occupancy, orientation, openings, and usage. The building geometry was designed using SketchUp with the Euclid plugin, and then modelled using the IDF Editor provided by EnergyPlus. An effort was made to ensure that all thermal zones have a convex shape. The model is available online on the following \href{https://zenodo.org/records/16935716/files/BuildingModel_EnergyPlus.idf?download=1}{link}~\cite{Saraiva2025b}.  
+
+Although the three floors of the Portuguese library were modelled, the focus of the study remained on the Noble Floor, which was mainly divided into three thermal zones, Spaces 1, 2, and 3, as depicted in the x-ray view of the southern façade in Fig.~\ref{fig:HygroEnergyPlus}.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.95\linewidth]{images/11-hygrothermal/Model.pdf}
+\caption{3D model representation. Note: the view of the southern façade has the thermal zones of the reading offices hidden.}
+\label{fig:HygroEnergyPlus}
+\end{figure}
+
+The archaeological research team of the University of Coimbra was contacted regarding the building envelope. However, the lack of information regarding the envelope assemblies of the historic building was limiting. Accordingly, the building envelope changed from century to century depending on the floor. Thus, the only documented research found indicated assumptions about the construction elements of the building envelope~\cite{Gaspar1994}, which was adopted for the current work. The constructions, composed of different materials, are defined in Tab.~\ref{tab:Envelope}, where the thermal properties for the main envelope elements are provided. The materials' database consulted was based on the Portuguese national construction practices (ITE50~\cite{LNEC_ITE50_2006}). 
+
+%       \begin{longtblr}[
+%           caption={Building envelope construction and respective thermal properties.},
+%           note{a} = {Includes superficial resistances (with film).},
+%           note{b} = {Between Noble Floor and the attic on the roof.},
+%           note{c} = {No film was considered for internal mass elements.},
+%           label={tab:Envelope},
+%       ] {
+%           colspec={X[2,l]X[2.5,l]X[1,l]},
+%           width=0.95\textwidth,
+%       }
+%          \hline
+%          \textbf{Element} & {\textbf{Description} \\ (Outside to inside)} & {\textbf{\gls{uvalue}}\TblrNote{a} \\ W.m\textsuperscript{-2}.K\textsuperscript{-1}}\\ \hline
+%          \textbf{Opaque exterior} & & \\ \hline
+%          External roof & {Clay tile, 3 cm \\ Wood, 4 cm} & 2.11 \\
+%          External wall & {Mortar, 2 cm \\ Limestone, 50 cm \\ Half-timbered, 100 cm \\ Limestone, 50 cm \\ Mortar, 2 cm} & 0.49 \\
+%          External floor & Limestone, 50 cm & 1.93 \\ 
+%          External door & {Wood, 10 cm} & 1.16 \\ \hline
+%          \textbf{Opaque interior} & & & \\ \hline
+%          Wood ceiling\TblrNote{b} & {Wood, 4 cm \\ Mortar, 2 cm} & 1.76 \\
+%          Internal wall & {Mortar, 2 cm \\ Limestone, 15 cm \\ Mortar, 2 cm} & 2.67 \\ 
+%          Internal door & {Wood, 4 cm} & 2.67 \\ 
+%          Internal ceiling and floor & {Mortar, 2 cm \\ Limestone, 50 cm \\ Mortar, 2 cm} & 1.59\\ 
+%          Internal door & {Wood, 4 cm} & 1.90 \\ \hline
+%          \textbf{Fenestration} & & \\ \hline
+%          {External fenestration \\ (windows)} & {Simple glass, 0.4 cm} & {6.01} \\
+%          {Internal fenestration \\ (diffusers)} & {Curtains, 0.1 cm} & {3.19} \\ \hline
+%          \textbf{Internal Mass} & & \\ \hline
+%          Carpet & {Carpet, 2 cm} & 3.00\TblrNote{c} \\ 
+%          Bookshelves & {Wood, 10 cm \\ Air gap, 10 cm \\ Wood, 4 cm} & 0.75\TblrNote{c} \\ \hline
+
+%       \end{longtblr}
+
+\begin{table}[H]
+\caption{Building envelope construction and respective thermal properties.\label{tab:Envelope}}
+	%\begin{adjustwidth}{-\extralength}{0cm}
+		%\begin{tabularx}{\fulllength}{CCC}
+    \begin{tabularx}{\textwidth}{CCC}
+			\toprule
+			\multirow[m]{2}{*}{\textbf{Element}}	& \textbf{Description}	& \textbf{\textit{U-Value}}~\textsuperscript{a)}\\
+      	& (Outside to inside)	& W.m\textsuperscript{-2}.K\textsuperscript{-1}\\
+			\hline 
+      \textbf{Opaque exterior}	& & \\
+      \hline 
+      \multirow[m]{2}{*}{External roof}	& Clay tile, 3 cm & \multirow[m]{2}{*}{2.11}		\\
+			  	                   & Wood, 4 cm			& 		\\
+      \hline                      
+      \multirow[m]{5}{*}{External wall}	& Mortar, 2 cm & \multirow[m]{5}{*}{0.49}		\\
+			  	                   & Limestone, 50 cm			& 		\\
+                             & Half-timbered, 100 cm			& 		\\
+                             & Limestone, 50 cm			& 		\\
+                             & Mortar, 2 cm			& 		\\  
+      \hline                        
+      {External floor}	& Limestone, 50 cm & {1.93}	\\
+      \hline 
+      {External door}	& Wood, 10 cm & {1.16}\\
+      \hline 
+      \textbf{Opaque interior}	& & \\
+      \hline 
+      \multirow[m]{2}{*}{Wood ceiling~\textsuperscript{b)}}	& Wood, 4 cm & \multirow[m]{2}{*}{1.76}		\\
+			  	                   & Mortar, 2 cm			& 		\\
+      \hline                      
+      \multirow[m]{3}{*}{Internal wall}	& Mortar, 2 cm & \multirow[m]{3}{*}{2.67}		\\
+			  	                   & Limestone, 15 cm			& 		\\
+                             & Mortar, 2 cm			& 		\\
+      \hline                       
+      \multirow[m]{3}{*}{Internal ceiling and floor}	& Mortar, 2 cm & \multirow[m]{3}{*}{1.59}		\\
+			  	                   & Limestone, 50 cm			& 		\\
+                             & Mortar, 2 cm			& 		\\ 
+      \hline 
+      {Internal door}	& {Wood, 4 cm} & 1.90\\
+      \hline 
+      \textbf{Fenestration}	& & \\
+      \hline 
+      External fenestration	& \multirow[m]{2}{*}{Simple glass, 0.4 cm} & \multirow[m]{2}{*}{6.01}		\\
+		  (windows) & 		& 		\\
+      \hline 
+      Internal fenestration	& \multirow[m]{2}{*}{Curtains, 0.1 cm} & \multirow[m]{2}{*}{3.19}		\\
+		  (diffusers) & 		& 		\\
+      \hline                          
+      \multirow[m]{3}{*}{Internal wall}	& Mortar, 2 cm & \multirow[m]{3}{*}{2.67}		\\
+			  	                   & Limestone, 15 cm			& 		\\
+                             & Mortar, 2 cm			& 		\\
+      \hline 
+      \textbf{Internal Mass}	& & \\
+      \hline 
+      Carpet & {Carpet, 2 cm} & 3.00~\textsuperscript{c)}\\
+      \hline 
+      \multirow[m]{3}{*}{Bookshelves}	& Wood, 10 cm & \multirow[m]{3}{*}{0.75~\textsuperscript{c)}}	\\
+			  	                   & Air gap, 10 cm			& 		\\
+                             & Wood, 4 cm			& 		\\                           
+			\bottomrule
+		\end{tabularx}
+	%\end{adjustwidth}
+	\noindent{\footnotesize{\textsuperscript{a)} Includes superficial resistances (with film).}\\}
+  \noindent{\footnotesize{\textsuperscript{b)} Between Noble Floor and the attic on the roof.}\\}
+  \noindent{\footnotesize{\textsuperscript{c)} No film was considered for internal mass elements.}}
+\end{table}
+
+Due to uncertainty around the envelope solutions, thermal bridges were not initially modelled. The validation of the model indicated whether \textit{U-Value} was correct or if global correction factors were necessary to account for thermal bridges.
+
+To complement the information provided in Tab.~\ref{tab:Envelope}, the optical properties of fenestration elements are discussed: windows have a \textit{SHGC} equal to 0.84 and a \textit{T\textsubscript{vis}} of 0.89; and internal diffusers have a \textit{SHGC} equal to 0.47 and a \textit{T\textsubscript{vis}} of 0.60.
+
+In terms of operational schedules for occupants, tourism schedules for 2018 and 2019 were based on the tourism data provided by the Rectory, which were used to estimate average values for each visit slot in the Noble Floor of Joanina Library, reflecting seasonal variations -- as shown in Fig.~\ref{fig:Tourism}. The occupancy levels in the Intermediate Floor were equal to the sum of the occupancy in all spaces of the Noble Floor.
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Occupancy during the Winter.]{\includegraphics[width=0.80\linewidth]{images/11-hygrothermal/TourismWinter.png}}
+  \hfill
+  \subfloat[Occupancy during the Summer.]{\includegraphics[width=0.80\linewidth]{images/11-hygrothermal/TourismSummer.png}}
+ \caption{Information about occupancy schedules in the Noble Floor.}
+ \label{fig:Tourism}
+\end{figure}
+
+The occupancy load was modelled in terms of percentage with regard to a maximum occupancy of 70 people. To evaluate the thermal comfort of the occupants, a metabolic rate of 1.4 met (people walking corresponding to a heat load rounding 144 W) was considered, the indoor air velocity was equal to 0.1 m.s\textsuperscript{-1}, and the clothing insulation was equal to 1.3 clo (Winter) and 0.5 clo (Summer). 
+
+Along with the occupancy schedules, times when doors open were equally modelled to include the movement of air between different thermal zones.
+
+In terms of operational schedules for lighting, they were turned on from 08h00 to 11h00 and 15h00 to 17h00 (Winter) or 19h00 (Summer). In each space, an installed capacity of 800 W of compact fluorescent lamps was considered as internal gain. 
+
+Infiltration rates were set according to the concept of \textit{ACH} with a calibration work based on a parametric analysis that varied \textit{ACH} from 0.25 h\textsuperscript{-1} to 0.55 h\textsuperscript{-1}.
+
+Alongside the main model, an alternative simulation was conducted to account for the natural ventilation of the historic library and assess the impact of having different visiting itineraries. Door and window opening schedules were also defined to include an approach that accounts for the movement of air between different thermal zones. This was conducted using the airflow network (AFN) model available in EnergyPlus to evaluate the ventilation promoted by opening the main door for the tourists' exit and its impact on the conservation conditions of the indoor environment.
+
+Six simulations were carried out from 2018 to 2023 (4 years with tourism and 2 without). The data from these four years was used to validate the model. Then, the study of additional measures to improve the indoor environment was conducted by simulating the building for a full calendar year, using the EPW file corresponding to the building's location. The simulation time step was set to 5 min, and surface heat balance convergence limits were maintained at EnergyPlus defaults. Outputs were printed hourly throughout one year of simulation. 
+
+Some simplifications were made during the modelling process: \textit{(i)} internal zoning was simplified to reflect functional use rather than exact room boundaries; \textit{(ii)} no detailed modelling of occupant behavior was included beyond schedule-based assumptions constant for all days of the week, including weekends; and \textit{(iii)} default values were assumed for the multi-zone airflow approaches regarding wind pressure coefficients, cracks properties, and air mass flows coefficient for openings. While these assumptions may have introduced some uncertainty, the validation of the model demonstrates the consistency of results, which aligns with the study's scope.
+
+The validation becomes, then, an essential milestone in the conservation methodology proposed in this work. Thus, it was important to carefully understand and analyse the best approaches to validate a dynamic model. A thorough review on simulation in heritage buildings was made by \citeauthor{Huerto-Cardenas2020}~(\citeyear{Huerto-Cardenas2020}), who concluded that microclimatic parameters (such as \temp, \rh, or others) are usually more used for validation of simulation models than energy-related variables (thermal loads or energy consumption). The absence of climate control systems and the difficulties in measuring their energy consumption justify the focus on the environmental conditions. Within the microclimatic sphere, the same study~\cite{Huerto-Cardenas2020} concluded that \temp{} stands as the most frequent for validating a model, especially for comfort assessment studies. Furthermore, dynamic simulation models often do not take into account the hygrometric behaviour of environments~\cite{Huerto-Cardenas2020}, especially when the research does not intend to investigate possible problems concerning conservation of collections. However, when conservation matters, which is the primary focus of the present doctoral work, additional humidity-related variables (\eg, \rh, or others) should be considered. Therefore, for the purpose of modelling the hygrothermal environment in heritage buildings, both \temp{} and \rh{} were considered in this study for the adequate validation of simulation models. Consequently, one keeps questioning how to carry out the validation of simulation models concerning the hygrothermal environment in this type of building. 
+
+Considering that the most used existing standards (\eg, ASHRAE Guideline 14) deal with model validation based on energy-related parameters, \citeauthor{Huerto-Cardenas2020}~(\citeyear{Huerto-Cardenas2020}) identified the most suitable recommended thresholds for validation using microclimatic parameters, which were proposed in two levels -- the results are summarised in Tab.~\ref{tab:ValidationThresholdsTH}.
+
+
+% \begin{table}[H]
+% %\centering
+% \caption{Validation thresholds according to microclimatic parameters. \textit{RMSE} -- Root mean square error; \textit{IC} -- Inequality coefficient.}
+% \label{tab:ValidationThresholdsTH}
+% \begin{tabularx}{\textwidth}{lll}
+% \toprule
+% \textbf{Validation} & \temp{} & \rh{} \\ \hline
+% \textbf{Level 1} & \begin{tabular}[l]{@{}l@{}}\gls{rmse}~$\leq$~1~\temperature\\ $\pm$~1~\temperature, \gls{fi}~$\geq$~95~\percentage\end{tabular} & \begin{tabular}[l]{@{}l@{}}\gls{rmse}~$\leq$~5~\percentage\\  $\pm$~5~\percentage,  \gls{fi}~$\geq$~95~\percentage\\ 0.95~$\leq$~\gls{qv}~$\leq$~1.10 \end{tabular} \\ \hline
+% \textbf{Level 2} & \begin{tabular}[l]{@{}l@{}}\gls{rmse}~$\leq$~2~\temperature \\ $\pm$~2~\temperature, \gls{fi}~$\geq$~95~\percentage \end{tabular} & \begin{tabular}[l]{@{}l@{}} \gls{rmse}~$\leq$~10~\percentage \\ $\pm$~10~\percentage,  \gls{fi}~$\geq$~95~\percentage \\ 0.75~$\leq$~\gls{qv}~$\leq$~0.95 \\ 1.10~$\leq$~\gls{qv}~$\leq$~1.5 \end{tabular} \\ \hline
+% \textbf{Basis} & \begin{tabular}[l]{@{}l@{}} \gls{r2}~\textgreater~0.75\\ \gls{ic}~\textless~0.25\end{tabular} & \begin{tabular}[l]{@{}l@{}} \gls{r2}~\textgreater~0.75\\ \gls{ic}~\textless~0.25\end{tabular} \\ \bottomrule
+% \end{tabularx}
+% \end{table}
+
+Tab.~\ref{tab:ValidationThresholdsTH} summarises the results found in literature~\cite{Huerto-Cardenas2020}, which has some metrics that go beyond the typical approach of validation. When working for preservation of collections in heritage buildings, some authors included analyses of frequency of residuals (\textit{F\textsubscript{i}}) and the differences in terms of daily fluctuations between measurements and predictions (\textit{Q\textsubscript{v}}).
+
+\textit{F\textsubscript{i}} focuses on evaluating differences between measured and simulated values (deviation) and verifying the percentage of them that remain below an acceptable threshold~\cite{Raji2018}. This metric offers a more informative assessment than traditional statistical indices, as it emphasises the distribution of deviations and forces that 95~\% of deviations should be lower than the proposed thresholds presented in Tab.~\ref{tab:ValidationThresholdsTH}. 
+
+\citeauthor{Kilian2013}~(\citeyear{Kilian2013}) proposed a validation method for preventive conservation models based on assessing the risk of degradation from microclimatic fluctuations. Considering the relevant impact of \rh{} and its fluctuations in the preventive conservation assessment, the same author introduced the Prediction rate (\textit{Q\textsubscript{v}}), which compares the number of days with \rh{} fluctuations exceeding a critical threshold between simulated and measured data to evaluate a model's predictive accuracy. \textit{Q\textsubscript{v}} is expressed by Eq.~\ref{eq:Qv}.
+
+\begin{linenomath}
+\begin{equation}
+    \label{eq:Qv}
+     Q_{v} = \dfrac{N_{s}}{N_{m}}
+\end{equation}
+\end{linenomath}
+
+Here, \textit{Ns} and \textit{Nm} are counters of the number of times when the simulated and measured daily \rh{} cycles exceed a certain daily fluctuation threshold, which should depend on specific thresholds recommended by conservation norms (\eg, UNI 10829~\cite{UNI1999}). The recommended thresholds for \textit{Q\textsubscript{v}} to validate prediction results are presented in Tab.~\ref{tab:ValidationThresholdsTH}. 
+
+In the context of cultural heritage conservation, those two metrics can be particularly relevant depending on the type of collections stored in the building, as they enable the inclusion of conservation approaches upon the validation of hygrothermal simulations. However, \textit{Q\textsubscript{v}} was not adopted in the present work, considering the literature review indicates that daily fluctuations have little impact on the degradation of hygroscopic materials. 
+
+\textit{R} should not exceed a maximum value for validation threshold (< 0.5)~\cite{Huerto-Cardenas2020}, but it ends up being redundant when \textit{R\textsuperscript{2}} is already assessed. Therefore, \textit{R} was not considered for the validation approach.
+
+In conclusion, according to most of the literature~\cite{Huerto-Cardenas2020}, a model is considered validated when a very high share of residuals are within the specified intervals, simulated \rh{} fluctuations are similar to the measured ones, and it performs well for general statistical metrics (\textit{RMSE}, \textit{R\textsuperscript{2}}, and \textit{IC}).

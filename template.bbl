@@ -20,4 +20,66 @@ Iskandar, L.; Faubel, C.; Martinez-Molina, A.; Beeson, S.T.
 \newblock {\em Energy and Buildings} {\bf 2024}, {\em 319},~114546.
 \newblock {\url{https://doi.org/10.1016/j.enbuild.2024.114546}}.
 
+\bibitem[Bülow et~al.(2002)Bülow, Colston, and Watt]{Bulow2002}
+Bülow, A.E.; Colston, B.J.; Watt, D.S.
+\newblock Preventive conservation of paper-based collections within historic
+  buildings.
+\newblock {\em Studies in Conservation} {\bf 2002}, {\em 47},~27--31.
+\newblock {\url{https://doi.org/10.1179/sic.2002.47.s3.006}}.
+
+\bibitem[ASHRAE(2023)]{ASHRAE2023}
+ASHRAE.
+\newblock {\em {ASHRAE Handbook - HVAC Applications: Chapter 24 Museums,
+  Galleries, Archives and Libraries}}; ASHRAE,  2023.
+
+\bibitem[Baía~Saraiva(2025)]{Saraiva2025b}
+Baía~Saraiva, N.
+\newblock Online Repository: Indoor Environment in Heritage Buildings:
+  Monitoring and Modelling Approaches for Collections Preservation,  2025.
+\newblock {\url{https://doi.org/https://doi.org/10.5281/zenodo.16935716}}.
+
+\bibitem[Gaspar et~al.(1994)Gaspar, Quintela, and Figueiredo]{Gaspar1994}
+Gaspar, A.R.; Quintela, D.A.; Figueiredo, A.R.
+\newblock {Aspectos do comportamento higrotermico de um edificio de elevada
+  inercia termica. Caso de uma biblioteca do seculo XVIII}.
+\newblock In Proceedings of the Energias limpias en progreso : libro de actas
+  del VII Congreso Iberico de Energia Solar, Vigo, Spain,  1994; pp. 657--662.
+
+\bibitem[Pina~dos Santos and Matias(2006)]{LNEC_ITE50_2006}
+Pina~dos Santos, C.A.; Matias, L.
+\newblock ITE50: Coeficientes de Transmissão Térmica de Elementos da
+  Envolvente dos Edifícios.
+\newblock Informação técnica, Laboratório Nacional de Engenharia Civil
+  (LNEC), Lisboa, Portugal,  2006.
+\newblock Versão atualizada.
+
+\bibitem[Huerto-Cardenas et~al.(2020)Huerto-Cardenas, Leonforte, Aste, {Del
+  Pero}, Evola, Costanzo, and Lucchi]{Huerto-Cardenas2020}
+Huerto-Cardenas, H.E.; Leonforte, F.; Aste, N.; {Del Pero}, C.; Evola, G.;
+  Costanzo, V.; Lucchi, E.
+\newblock {Validation of dynamic hygrothermal simulation models for historical
+  buildings: State of the art, research challenges and recommendations}.
+\newblock {\em Building and Environment} {\bf 2020}, {\em 180},~107081.
+\newblock {\url{https://doi.org/10.1016/j.buildenv.2020.107081}}.
+
+\bibitem[Rajčić et~al.(2018)Rajčić, Skender, and Damjanović]{Raji2018}
+Rajčić, V.; Skender, A.; Damjanović, D.
+\newblock An innovative methodology of assessing the climate change impact on
+  cultural heritage.
+\newblock {\em International Journal of Architectural Heritage} {\bf 2018},
+  {\em 12},~21--35.
+\newblock {\url{https://doi.org/10.1080/15583058.2017.1354094}}.
+
+\bibitem[Kilian(2013)]{Kilian2013}
+Kilian, R.
+\newblock Klimastabilitat historischer Gebaude : Bewertung hygrothermischer
+  Simulationen im Kontext der praventiven Konservierung.
+\newblock PhD thesis, Fraunhofer Verlag, Universitat Stuttgart, Technische
+  Universitat Munchen,  2013.
+
+\bibitem[UNI(1999)]{UNI1999}
+UNI.
+\newblock {\em {UNI 10829: Beni di interesse storico e artistico - Condizioni
+  ambientali di conservazione - Misurazione ed analisi}}; UNI: Milano,  1999.
+
 \end{thebibliography}

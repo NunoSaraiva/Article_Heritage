@@ -1,0 +1,153 @@
+%!TEX root = ../template.tex
+
+\section{Results and Discussion}
+
+\subsection{Models Validation}
+
+The hygrothermal model developed in EnergyPlus was validated using in-situ measurements of environmental parameters collected within the case study building, specifically \gls{temp} and \gls{rh}. A parametric analysis of the \gls{ach} was conducted to identify the simulation configuration that best matched the observed conditions, with \gls{ach} values ranging from 0.25 to 0.50 h\textsuperscript{-1}. Validation was performed by comparing simulated results with measured data in three monitored spaces (Spaces 1, 2, and 3), each equipped with four sensors. Model performance was evaluated both against individual sensor readings and against the average measured values within each space for the six years (from 2018 to 2023). The accuracy of the model in representing the building's hygrothermal behaviour was assessed using the \gls{r2}, \gls{ic}, \gls{rmse}, \gls{fi} level 1, and \gls{fi} level 2. This process confirmed that the simulation results reliably reflect the actual indoor environmental conditions, thereby reinforcing the robustness of the model and the credibility of the subsequent analyses. The results of the performance metrics are relative to the average of the three spaces, and are presented in Tab.~\ref{tab:ModelValidation}.
+
+% \begin{singlespace}
+%       \begin{longtblr}[
+%           caption={Validation performance of the simulation model. Green complies, Yellow satisfies level 2, Red does not comply.},
+%           %note{b} = {Between Noble Floor and the attic on the roof.},
+%           label={tab:ModelValidation},
+%       ] {
+%           colspec={X[1,c]X[1.1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]},
+%           width=0.95\textwidth,
+%       }
+%          \hline
+%         \SetCell[r=2]{c}\textbf{Variable} & \textbf{Year} & \textbf{2018} & \textbf{2019} & \textbf{2020} & \textbf{2021} & \textbf{2022} & \textbf{2023} \\ \hline
+%          & \textbf{\gls{ach}} & \textbf{0.45} & \textbf{0.55} & \textbf{0.40} & \textbf{0.45} & \textbf{0.50} & \textbf{0.50} \\ \hline
+%         \SetCell[r=5]{c}\textbf{\gls{temp}} & \textbf{\gls{r2}} & \SetCell{green9} 0.98 & \SetCell{green9} 0.96 & \SetCell{green9} 0.97 & \SetCell{green9} 0.97 & \SetCell{green9} 0.97 & \SetCell{green9} 0.97 \\
+%          & \textbf{\gls{rmse}} & \SetCell{green9} 0.78 & \SetCell{green9} 0.96 & \SetCell{yellow} 1.63 & \SetCell{yellow} 1.16 & \SetCell{green9} 0.97 & \SetCell{yellow} 1.85 \\
+%          & \textbf{\gls{fi} L1} & \SetCell{red8} 81.98 & \SetCell{red8} 72.57 & \SetCell{red8} 53.69 & \SetCell{red8} 64.90 & \SetCell{red8} 70.80 & \SetCell{red8} 36.45 \\
+%          & \textbf{\gls{fi} L2} & \SetCell{green9} 97.93 & \SetCell{green9} 95.49 & \SetCell{red8} 77.72 & \SetCell{red8} 89.33 & \SetCell{green9} 95.30 & \SetCell{red8} 70.59 \\
+%          & \textbf{\gls{ic}} & \SetCell{green9} 0.02 & \SetCell{green9} 0.02 & \SetCell{green9} 0.04 & \SetCell{green9} 0.03 & \SetCell{green9} 0.02 & \SetCell{green9} 0.05 \\ \hline
+%         \SetCell[r=5]{c}\textbf{\gls{rh}} & \textbf{\gls{r2}} & \SetCell{red8} 0.71 & \SetCell{red8} 0.72 & \SetCell{green9} 0.75 & \SetCell{red8} 0.73 & \SetCell{green9} 0.75 & \SetCell{red8} 0.57 \\
+%          & \textbf{\gls{rmse}} & \SetCell{yellow} 6.72 & \SetCell{yellow} 7.94 & \SetCell{yellow} 8.29 & \SetCell{yellow} 8.22 & \SetCell{yellow} 7.03 & \SetCell{yellow} 9.23 \\
+%          & \textbf{\gls{fi} L1} & \SetCell{red8} 58.88 & \SetCell{red8} 51.92 & \SetCell{red8} 45.05 & \SetCell{red8} 52.40 & \SetCell{red8} 56.96 & \SetCell{red8} 41.41 \\
+%          & \textbf{\gls{fi} L2} & \SetCell{red8} 86.52 & \SetCell{red8} 80.34 & \SetCell{red8} 78.40 & \SetCell{red8} 80.41 & \SetCell{red8} 84.85 & \SetCell{red8} 75.16 \\
+%          & \textbf{\gls{ic}} & \SetCell{green9} 0.05 & \SetCell{green9} 0.06 & \SetCell{green9} 0.07 & \SetCell{green9} 0.07 & \SetCell{green9} 0.06 & \SetCell{green9} 0.07 \\ \hline
+%       \end{longtblr}
+% \end{singlespace}
+
+
+Tab.~\ref{tab:ModelValidation} shows that the best-performing air change rates (ACH) for the Joanina Library lie between 0.45 and 0.55~h\textsuperscript{-1}. These values are higher than those estimated using the decay method described in Subsection~\ref{subsect:Ventilation}. The tracer gas experiments were conducted during nighttime, when the building was closed and non-operational, leading to lower infiltration rates due to the absence of air mass exchanges through openings and user-related activity. In contrast, the hygrothermal model employed a constant \gls{ach} throughout the year for simplification purposes, which should be interpreted as a daily average incorporating both daytime and nighttime conditions. This modelling assumption justifies the higher optimal \gls{ach} values identified through the validation task, as they reflect increased infiltration during daytime operation.
+
+Notably, the model performed less effectively in 2023, as evidenced by lower validation compliances across several metrics. This discrepancy may be attributed to maintenance works conducted during that year, which likely altered regular building operation. These changes were not accounted for in the model, suggesting that specific adjustments or scenario-based calibration may be necessary to simulate periods of atypical building use accurately.
+
+The validation results shown in Tab.~\ref{tab:ModelValidation} indicate that the hygrothermal model demonstrates excellent performance for \gls{temp} prediction. In contrast, \gls{rh} results show moderate to limited accuracy, requiring further improvement of the hygroscopic modelling.
+
+% For temperature, \gls{r2} remains consistently high across all years, ranging from 0.96 to 0.98, suggesting a strong correlation between simulated and measured values. \gls{rmse} values are mostly below 1.0~\temperature{} (except in 2020, 2021, and 2023), indicating minor absolute errors. \gls{ic} values for temperature are also low, supporting a good agreement between model and observations. However, \gls{fi} within Level 1 is relatively poor, suggesting that while the average model trend is accurate, short-term deviations may occur. Nevertheless, Level 2 residual frequency remains relatively high, reinforcing the model's general predictive reliability for temperature.
+
+The model's \gls{temp} exhibited high predictive accuracy for \gls{r2}, whose values ranged from 0.96 to 0.98, exceeding the previously adopted threshold of 0.75 for reliable dynamic thermal simulations. \gls{rmse} values remained below 1.0~\temperature{} in four of the six years, and slightly exceeded that in 2020, 2021, and 2023. Despite these local deviations, the \gls{ic} remained consistently low (far below 0.25), which is indicative of good agreement between the model predictions and observations. However, \gls{fi} within Level 1 varied substantially, ranging from 36.45~\percentage{} (2023) to 81.98~\percentage{} (2018). Although these values are below the ideal threshold of 95~\percentage{} often cited for strict validation, the Level 2 residual frequency was consistently higher, reinforcing the model's general predictive reliability for temperature, even if some short-term fluctuations are less accurately resolved.
+
+However, the model's performance for \gls{rh} was moderate, considering that two thirds of \gls{r2} fell below the standard reliability threshold of 0.75 for predictive models. \gls{rmse} values, while consistent, exceeded the level 1 benchmark but complied with the level 2 (below 10~\percentage{} for reliable simulation). Contrarily, \gls{fi} analysis reflects a poorer compliance with the established thresholds as \gls{fi} Level 2 ranged from 75~\percentage{} to 86~\percentage{}. The \gls{ic} remained below 0.07, complying with the previously defined threshold. 
+
+Plots in Fig.~\ref{fig:ValidationTimeSeries} display time series of \gls{temp} and \gls{rh} for one chosen year with measurements and predictions. The sensitivity analysis and all results for each monitored location are presented in the Appendix~\ref{AppF:hygrothermal_validation}.
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[2018 (\gls{ach} = 0.45).]{\includegraphics[width=0.95\linewidth]{images/11-hygrothermal/GS1_2018_ACH0.45.pdf}}
+  \hfill
+  \subfloat[2021 (\gls{ach} = 0.45).]{\includegraphics[width=0.95\linewidth]{images/11-hygrothermal/GS1_2021_ACH0.45.pdf}}
+ \caption{Time series of annual simulation results against measurements.}
+ \label{fig:ValidationTimeSeries}
+\end{figure}
+
+Overall, the model is well-calibrated for \gls{temp} prediction, meeting or exceeding the defined validation criteria. \gls{rh} predictions, while capturing seasonal trends, show more limitations denoting moderate dispersion and tending to under- or over-estimate peak \gls{rh} values. Indeed, Fig.~\ref{fig:ValidationTimeSeries} shows that such larger differences occur in \gls{rh} during peaks (positive and negative) of predictions. This is mainly related to the lack of hygroscopic inertia of the dynamic model, which required a more precise approach to parameterise the hygroscopic behaviour of bookshelves and books. Improvements could be pursued through more detailed modelling of transient moisture loads and the buffering effect of internal surfaces and furniture. For this reason, the author modelled the building using a combined heat and moisture transfer (\gls{hamt}) algorithm with default hygroscopic inputs for materials. However, the iterative process of calibration limited the approach due to the long duration of each simulation (more than 48 hours). This limitation was referred to as the reason why \gls{hamt} is not as frequently used as other tools (\eg WUFI Pro)~\cite{Yang2015,Pallin2017}. Adding to this, little information was found concerning the hygroscopic behaviour of materials (sorption isotherms, suction, redistribution, and diffusion of moisture). Thus, this approach was abandoned due to time restrictions; further research should be done considering this moisture calibration that affects the indoor \gls{rh}. The calibration process using the \gls{hamt} algorithm would attenuate peaks of \gls{rh}, thereby increasing the hygroscopic inertia and improving the precision of the model. 
+
+The greater deviations for \gls{rh} are also related to the dependent characteristic of probes when monitoring the parameter. By definition, \gls{rh} depends on \gls{temp}, which may increment a compound error in \gls{rh} predictions. In such respect, it is recommended to verify the matching of both parameters, since a slight deviation in temperature might highly affect the relative humidity output of the simulation model. These findings are consistent with previous studies that highlight the challenges of accurately modelling \gls{rh} in moisture-sensitive environments~\cite{Huerto-Cardenas2020}, which is the case of the Portuguese library.
+
+Even though the performance metrics were not completely achieved, the accuracy of the model was considered sufficient to evaluate differences for the characterisation of the hygrothermal environment of the Joanina Library and the impact study of some tentative mitigation measures.
+
+\subsection{Characterisation}
+
+Although the historic climate did not change significantly over the six years of monitoring, including the periods of minimal occupancy during 2020 and 2021, the precise impact of tourism on the hygrothermal environment remained unclear. To address this, a hygrothermal model was developed and validated to investigate the influence of tourism on the Joanina Library. The model incorporated a parametric analysis in which both the number of tourists per hour and their metabolic rates were systematically varied. The results of this analysis are presented in Fig.~\ref{fig:TourismImpact}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.95\linewidth]{images/11-hygrothermal/TourismImpact.pdf}
+\caption{Impact of tourism in the hygrothermal environment.}
+\label{fig:TourismImpact}
+\end{figure}
+
+The temperature (\gls{temp}) exhibits a linear increase with tourism (Fig.~\ref{fig:TourismImpact}), whereas relative humidity (\gls{rh}) does not. The variation in \gls{rh} depends on two competing factors, the water vapour released by tourists (latent heat), and the temperature rise due to sensible heat also released by tourists. While sensible heat directly increases \gls{temp}, latent heat increases the absolute moisture content in the air. However, the temperature rise reduces the expected increase in \gls{rh} by raising the air's saturation vapour pressure. Consequently, the relationship between tourism and \gls{rh} is nonlinear, as demonstrated in the results.
+
+For the Joanina Library, the temperature increase ranges from 0.259~\temperature{} to 0.307~\temperature{} per 100 tourists·hour\textsuperscript{-1} in terms of annual averages, which represents a 1.419~\percentage{} to 1.682~\percentage{} per 100 tourists per hour increase relative to the baseline (no tourism).
+
+The \gls{rh} variation is strongly influenced by metabolic rate. At lower metabolic rates (1.1 met), the temperature rise dominates, causing \gls{rh} to decrease despite the additional moisture from tourists. Conversely, at higher metabolic rates (1.7 met), the latent heat release becomes significant, leading to a net increase in \gls{rh}, particularly at high occupation rates (number of tourists). Notably, \gls{rh} is higher in the absence of tourism than under regular operation with low metabolic rates (1.1 met), highlighting the dual role of temperature and moisture in shaping hygrothermal conditions.
+
+The metabolic rate was considered in this analysis because it is not usually the most evident variable considered when studying mitigating solutions that would focus on reducing the impact of tourism. For instance, altering visitor routes in historic buildings could inadvertently exacerbate hygrothermal stress if metabolic effects are disregarded. Thus, metabolic activity should be explicitly considered in such assessments.
+
+The hygrothermal model was further explored to test some mitigation actions in the following subsections after the assessment of measurements according to the recommended values in guidelines.
+
+\subsection{Mitigation Actions}
+
+Considering that the indoor environment of Joanina Library presented a need to decrease the chemical risk due to high \gls{temp} and \gls{rh}, and control the presence of biological organisms (fungi and insect pests), passive and/or active strategies should be evaluated. The study of such strategies resorted to the use of measurement data and simulation results previously described.
+
+Passive strategies such as natural ventilation and airflow dynamics can strategically include actions, such as opening windows or promoting stack effects, so that ventilation can reduce excess moisture and stabilise temperatures, particularly in climates with favourable diurnal or seasonal variations ~\cite{Aste2019}. However, its effectiveness depends on external conditions and may require supplemental measures in extreme climates. 
+
+In contrast, active systems like \gls{hvac} can be used to set the hygrothermal parameters, but their incorrect design and control can put at risk the preservation of collections and entail higher energy costs~\cite{Lucchi2018}. 
+
+As for natural ventilation strategies, the first action focuses on opening the main door at the beginning of the day. Its effect was discussed in previous sections -- the ventilation promoted reduced \gls{temp} and increased \gls{rh} for a short period, but those parameters quickly stabilised to the initial values. From an indoor environment perspective, this measure could be positive as pollutants are diluted with fresh air. Still, from a hygrothermal analysis, its impact is almost negligible, especially for hygroscopic materials that have long-time responses to fluctuations.
+
+The impact of the door was further explored through a simulation where different configurations were tested using the airflow network (\gls{afn}) model available in EnergyPlus. The ventilation promoted by opening the main door for tourists to exit the building was studied. The software outputs allow the study of the heat balance through infiltrations (mostly from door opening and leaks from the envelope) and/or from the chimney effect between thermal zones. An alternative circuit and different operation configurations were tested to improve the conservation conditions. Besides the current visiting circuit, named as A, 12 configurations were further tested (Fig.~\ref{fig:TourismAlternativeEntrance}a). The main difference between A and others consists in keeping the main door closed by changing the circuit: visitors enter the building in a reception room and leave through the Prison/Archive floor (which, in case A, is the entrance). That entrance room, named as Waiting Zone, can serve only as access to the noblest floor without any separating walls (all configurations B) or it can be a reception room, as a virtual pre-visit space, being separated by doors from the rest of the building (all configurations C). Among the alternatives, there are additional sub-configurations: with/without HVAC in the Waiting Zone and/or the Corridor and maintain closed or opened one or both spaces, as shown in Fig.~\ref{fig:TourismAlternativeEntrance}b. 
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Diagram of the different simulation configurations considered.]{\includegraphics[width=0.80\linewidth]{images/11-hygrothermal/SimulationAlternativeEntrance.pdf}}
+  \hfill
+  \subfloat[Depict of alternative entrance. Northern façade with: (a) a smaller Waiting Zone and openly connected to the Noble Floor \& the Corridor is exterior; or (b) a bigger and closed Waiting Zone \& the Corridor is closed.]{\includegraphics[width=0.80\linewidth]{images/11-hygrothermal/B&C.png}}
+ \caption{Study of the alternative entrance in Joanina Library.}
+ \label{fig:TourismAlternativeEntrance}
+\end{figure}
+
+For the configurations with HVAC in the waiting zone and corridor, an ideal loads air system (efficiency equal to 100~\%) was used to control the conditions within the Noble Floor. The heating setpoint was 20~\temperature{} and the cooling 25~\temperature. The humidification was set to 40~\percentage{} and dehumidification to 60~\percentage. The chosen setpoints were adopted to simplify the modelling process, without restricting the indoor environment to tight ranges of \gls{temp} and \gls{rh}, considering that the climate-controlled zones did not store books and ensure comfort to tourists.
+
+The comparison of different configurations for the alternative was assessed by referring to the analysis of \textit{(i)} the heat balance from ventilation exchanges from the outdoor (infiltration) and between thermal zones; and \textit{(ii)} short-term fluctuations of \gls{temp} and \gls{rh}.
+
+Sensible and latent heat gains and losses between zones and outdoors were directly extracted from the outputs of the software and are presented in Figs.~\ref{fig:Sensible}~and~\ref{fig:Latent}. The mixing concept is the net balance of the gains and losses that will change the conditions of the indoor air.
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Sensible heat exchanges.]{\includegraphics[width=0.80\linewidth]{images/11-hygrothermal/SensibleHeat.png}}\hspace{0.1cm}
+  \subfloat[Sensible heat net balance.]{\includegraphics[width=0.80\linewidth]{images/11-hygrothermal/MixingSensible.png}}\hspace{0.1cm}
+ \caption{Sensible heat gains and losses with the outdoor and adjacent spaces of Space 1.}
+ \label{fig:Sensible}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Latent heat exchanges.]{\includegraphics[width=0.80\linewidth]{images/11-hygrothermal/LatentHeat.png}}\hspace{0.1cm}
+  \subfloat[Latent heat net balance.]{\includegraphics[width=0.80\linewidth]{images/11-hygrothermal/MixingLatent.png}}\hspace{0.1cm}
+  \hfill
+ \caption{Latent heat gains and losses with the outdoor and adjacent spaces of Space 1.}
+ \label{fig:Latent}
+\end{figure}
+
+Each point of the Figs.~\ref{fig:Sensible}a~and~~\ref{fig:Latent}a represents a heat gain (positive) or loss (negative). It is evidenced that configuration A has higher heat sensible losses (black points), particularly when the main door is open; but also, bigger heat gains from adjacent thermal zones of Space 1 (orange points) than in B13. In other words, the ventilation promoted by opening the main door intensifies the exchange of air between all thermal zones, which includes the warmer air from the Intermediate floor that promotes a chimney effect of the air ending up heating Space 1 -- this air movement is noticeable when visiting the building, especially in the Winter when the difference of temperature is higher between Noble and Intermediate floors. Note that for configuration B13, heat exchanges (and air movement) are minimised (red and light grey points). These heat exchanges induce short-term fluctuations in the hygrothermal conditions. Annual maximum values decreased from configuration A for all the remaining configurations as presented in Fig.~\ref{fig:MaximumDailyFluctuations}, which was expected from the previous analysis.
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Temperature (\gls{temp}).]{\includegraphics[width=0.65\linewidth]{images/11-hygrothermal/Temp_Fluctuation.png}}
+  \hfill
+  \subfloat[Relative humidity (\gls{rh}).]{\includegraphics[width=0.65\linewidth]{images/11-hygrothermal/RH_Fluctuation.png}}
+ \caption{Maximum daily fluctuations.}
+ \label{fig:MaximumDailyFluctuations}
+\end{figure}
+
+Besides the reduction of daily fluctuations, which are not significant for hygroscopic materials, the hygrothermal environment of the Noble floor did not change significantly among all configurations.  The attempt to use the open waiting zone connected to the Noble floor to help control the indoor environment was insignificant. In fact, the small connection to the Noble Floor is small (1.4~m\textsuperscript{2}) compared to the volume of the library (Spaces 1, 2 and 3). It is not enough to bring a significant controlled airflow from the pre-visit rooms to maintain desirable conditions. 
+
+In summary, the idea of creating an alternative entrance did not bring substantial improvements for the case study of Joanina Library regarding the hygrothermal environment. These results suggest that the Noble Floor should require other solutions when trying to decrease \gls{temp} and \gls{rh}, \eg, HVAC systems. With this solution in mind, the simulation model was used to calculate the thermal loads (sensible and latent) of the spaces in the Noble floor. It was assigned a \gls{ach} of 0.60~h\textsuperscript{-1} and a regular occupancy schedule for more unfavourable conditions when calculating thermal loads. The calculation of the thermal loads assumed the setpoints recommended by ASHRAE Class AA (\gls{temp}: 15~\temperature{} and 25~\temperature; \gls{rh}: 35~\percentage{} and 65~\percentage) using an ideal loads air system (efficiency of 100~\percentage). The time series with the evolution of thermal loads for Space 1 is shown in Fig.~\ref{fig:ThermalLoads}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.95\linewidth]{images/11-hygrothermal/ThermalLoads_TimeSeries_WithTourism.pdf}
+\caption{Thermal loads.}
+\label{fig:ThermalLoads}
+\end{figure}
+
+Fig.~\ref{fig:ThermalLoads} evidences that there are sensible loads for heating and cooling, but for latent loads, there is only the need for dehumidifying. Considering that the setpoint range is broad, the thermal loads would need to be much larger for strict and narrow climate control. Instead, the approach focused on trying to slowly reduce the historical climate over the most critical periods (Summer and Winter). 
+
+\subsection{Climate Change Scenarios}

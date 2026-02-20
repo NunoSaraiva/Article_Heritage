@@ -1,0 +1,238 @@
+% % Nomeclature
+% \newglossaryentry{dni}{name={\textit{DNI}},description={Direct Normal Irradiance},symbol={\textit{W.m\textsuperscript{-2}}}}
+% \newglossaryentry{dhi}{name={\textit{DHI}},description={Diffuse Horizontal Irradiance},symbol={\textit{W.m\textsuperscript{-2}}}}
+% \newglossaryentry{ghi}{name={\textit{GHI}},description={Global Horizontal Irradiance}, symbol={\textit{W.m\textsuperscript{-2}}}}
+% \newglossaryentry{rh}{name={\textit{RH}},description={Relative humidity of the air},symbol={\%}}
+% \newglossaryentry{tout}{name={\textit{TEMP\textsubscript{out}}},description={Outdoor Temperature},symbol={\textit{{\textdegree}C}}}
+% \newglossaryentry{ei}{name={\textit{E\textsubscript{a}}},description={Extraterrestrial Irradiance},symbol={\textit{W.m\textsuperscript{-2}}}}
+% \newglossaryentry{znth}{name={$\theta \textsubscript{z}$},description={Zenith Angle},symbol={\textit{\textdegree}}}
+% \newglossaryentry{rmbe}{name={\textit{MBE\textsubscript{r}}},description={Relative Mean Bias Error},symbol={\%}}
+% \newglossaryentry{rrmse}{name={\textit{RMSE\textsubscript{r}}},description={Relative Root-Mean-Square Error},symbol={\%}}
+% \newglossaryentry{mbe}{name={\textit{MBE}},description={Mean Bias Error},symbol={\%}}
+% \newglossaryentry{re}{name={\textit{RE}},description={Relative Error},symbol={\%}}
+% \newglossaryentry{r2}{name={\textit{R\textsuperscript{2}}},description={Coefficient of Determination},symbol={\textit{}}}
+% \newglossaryentry{cdf}{name={\textit{CDF}},description={Cumulative Distribution Function},symbol={\%}}
+% \newglossaryentry{recum}{name={\textit{RE\textsubscript{Cum}}},description={Relative Error of the cumulative daily exposure},symbol={\%}}
+% \newglossaryentry{xsim}{name={$\mathit{\hat{x}_{i}}$},description={Simulation value for timestep \textit{i}},symbol={\textit{}}}
+% \newglossaryentry{xmea}{name={$\mathit{{x}_{i}}$},description={Measurement value for timestep \textit{i}},symbol={\textit{}}}
+% \newglossaryentry{n}{name={$\mathit{N}$},description={Number of timesteps},symbol={\textit{}}}
+% \newglossaryentry{avgxmea}{name={$\mathit{\overline{x}_{mea}}$},description={Average of all measurements},symbol={\textit{}}}
+% \newglossaryentry{avgx}{name={$\mathit{\overline{x}}$},description={Average of the ten simulations for each setup (simulation method and solar model)},symbol={\textit{}}}
+% \newglossaryentry{io}{name={\textit{I/O Ratio}},description={Indoor/Outdoor ratio},symbol={\textit{}}}
+% \newglossaryentry{a}{name={\textit{A}},description={Area},symbol={\textit{m\textsuperscript{2}}}}
+% \newglossaryentry{ach}{name={\textit{ACH}},description={Air changes per hour},symbol={\textit{h\textsuperscript{-1}}}}
+% \newglossaryentry{achr}{name={\textit{ACH\textsubscript{r}}},description={Air changes per hour ratio},symbol={\textit{}}}
+% \newglossaryentry{bri}{name={\textit{BRI}},description={Biological risk index},symbol={\%}}
+% \newglossaryentry{c}{name={\textit{C\textsubscript{i}}},description={Size-fractioned mass concentration},symbol={\concentration}}
+% \newglossaryentry{cn}{name={\textit{C\textsubscript{N}}},description={Particle counts per volume of size channel \text{i}},symbol={\textit{m\textsuperscript{-3}}}}
+% \newglossaryentry{cout}{name={\textit{C\textsubscript{out}}},description={Outdoor mass concentration},symbol={\textit{$\mu g.m\textsuperscript{-3}$}}}
+% \newglossaryentry{ct}{name={\textit{C(t)}},description={Mean concentration},symbol={\textit{mg.m\textsuperscript{-3}}}}
+% \newglossaryentry{di}{name={\textit{D\textsubscript{i}}},description={Mean diameter of size channel \textit{i}},symbol={\textit{\mu~m}}}
+% \newglossaryentry{dsi}{name={\textit{DSI}},description={Daily span index},symbol={\textit{}}}
+% \newglossaryentry{elm}{name={\textit{eLM}},description={Equivalent Lifetime Multiplier},symbol={\textit{}}}
+% \newglossaryentry{i}{name={\textit{i}},description={Size channel (0.3, 0.5, 1, 2.5, 5, 10)},symbol={\textit{}}}
+% \newglossaryentry{ki}{name={\textit{K\textsubscript{i}}},description={Deposition rate of size channel \textit{i}},symbol={\textit{h\textsuperscript{-1}}}}
+% \newglossaryentry{lse}{name={\textit{LSE}},description={Least Squares Error},symbol={\%}}
+% \newglossaryentry{ma}{name={\textit{MA}},description={Moving average},symbol={\textit{}}}
+% \newglossaryentry{mi}{name={\textit{m\textsubscript{i}}},description={Mass of one particle of size channel \textit{i}},symbol={\textit{$\mu g$}}}
+% \newglossaryentry{np}{name={\textit{Np}},description={Particle counts},symbol={\textit{}}}
+% \newglossaryentry{nresusp}{name={\textit{n}},description={Number of resuspension events},symbol={\textit{}}}
+% \newglossaryentry{nclass}{name={\textit{n\textsubscript{Class}}},description={Counts for a specific conservation class},symbol={\textit{}}}
+% \newglossaryentry{ntotal}{name={\textit{n\textsubscript{Total}}},description={Total number of measurements},symbol={\textit{}}}
+% \newglossaryentry{pci}{name={\textit{PCI}},description={Particle conservation index},symbol={\%}}
+% \newglossaryentry{pm}{name={\textit{PM}},description={Particulate matter},symbol={\textit{$\mu~g.m\textsuperscript{-3}$}}}
+% \newglossaryentry{pi}{name={\textit{P\textsubscript{i}}},description={Penetration factor of size channel \textit{i}},symbol={\textit{}}}
+% \newglossaryentry{q}{name={\textit{Q}},description={Ventilation air flow rate},symbol={\textit{m\textsuperscript{3}.h\textsuperscript{-1}}}}
+% \newglossaryentry{shi}{name={\textit{SHI}},description={Spatial homogeneity index},symbol={\textit{}}}
+% \newglossaryentry{si}{name={\textit{S\textsubscript{i}}},description={Emission of particles of size channel \textit{i}},symbol={\textit{h\textsuperscript{-1}}}}
+% \newglossaryentry{r}{name={\textit{R}},description={Reduction coefficient},symbol={\textit{}}}
+% \newglossaryentry{ts}{name={\textit{t}},description={Time step},symbol={\textit{h}}}
+% \newglossaryentry{tpm}{name={\textit{TPM}},description={Total particulate matter},symbol={\textit{$\mu g.m\textsuperscript{-3}$}}}
+% \newglossaryentry{vol}{name={\textit{Vol}},description={Room volume},symbol={\textit{m\textsuperscript{3}}}}
+% \newglossaryentry{vi}{name={\textit{v\textsubscript{i}}},description={Deposition velocity of size channel \textit{i}},symbol={\textit{m.s\textsuperscript{-1}}}}
+% \newglossaryentry{vs}{name={\textit{v\textsubscript{s}}},description={Sample volume},symbol={\textit{m\textsuperscript{3}}}}
+% \newglossaryentry{x}{name={\textit{x}},description={Measurement},symbol={\textit{$\mu~g.m\textsuperscript{-3}$}}}
+% \newglossaryentry{xday}{name={\textit{$\overline{x}\textsubscript{day}$}},description={Daily running average of measurement \textit{x}},symbol={\textit{$\mu g.m\textsuperscript{-3}$}}}
+% \newglossaryentry{rho}{name={\textit{\textrho}},description={Particle density},symbol={\textit{$\mu~g.m^{-3}$}}}
+% \newglossaryentry{perfidx}{name={\textit{PI}},description={Perfomence Index},symbol={\%}}
+% \newglossaryentry{g}{name={\textit{G}},description={Generation of pollutants},symbol={\textit{$mg.h\textsuperscript{-1}$}}}
+% \newglossaryentry{cext}{name={\textit{C\textsubscript{ext}}},description={Outdoor concentration},symbol={\textit{$mg.m\textsuperscript{-3}$}}}
+% \newglossaryentry{vud}{name={$\nu_{d}$},description={Deposition rate},symbol={\textit{$mg.m\textsuperscript{-2}.h\textsuperscript{-1}$}}}
+% \newglossaryentry{sarea}{name={\textit{S}},description={Area of deposition surface},symbol={\textit{m\textsuperscript{2}}}}
+% \newglossaryentry{qac}{name={\textit{Q\textsubscript{ac}}},description={Air flow rate through the air purifier},symbol={\textit{m\textsuperscript{3}.h\textsuperscript{-1}}}}
+% \newglossaryentry{eac}{name={\textit{$\varepsilon_{ac}$}},description={Efficiency of air purifier},symbol={\textit{-}}}
+% \newglossaryentry{cequi}{name={\textit{C\textsubscript{equi}}},description={Equilibrium concentration},symbol={\textit{$mg.m\textsuperscript{-3}$}}}
+% \newglossaryentry{c0}{name={\textit{C\textsubscript{0}}},description={Concentration when \textit{t} = 0},symbol={\textit{$mg.m\textsuperscript{-3}$}}}
+% \newglossaryentry{temp}{name={\textit{TEMP}},description={Temperature of the air},symbol={\textit{\textdegree~C}}}
+% \newglossaryentry{p}{name={\textit{P}},description={Atmospheric pressure},symbol={\textit{kPa}}}
+% \newglossaryentry{rain}{name={\textit{RR}},description={Rain rate},symbol={\textit{mm.h\textsuperscript{-1}}}}
+% \newglossaryentry{winddirection}{name={\textit{$\varphi_{wind}$}},description={Wind direction},symbol={\textit{\textdegree}}}
+% \newglossaryentry{windvelocity}{name={\textit{V\textsubscript{wind}}},description={Wind velocity},symbol={\textit{m.s\textsuperscript{-1}}}}
+
+% Nomenclature
+\newglossaryentry{dni}{name={\textit{DNI}},description={Direct normal irradiance},symbol={{W.m\textsuperscript{-2}}}}
+\newglossaryentry{dhi}{name={\textit{DHI}},description={Diffuse horizontal irradiance},symbol={{W.m\textsuperscript{-2}}}}
+\newglossaryentry{ghi}{name={\textit{GHI}},description={Global horizontal irradiance},symbol={{W.m\textsuperscript{-2}}}}
+\newglossaryentry{rh}{name={\textit{RH}},description={Relative humidity of the air},symbol={{\%}}}
+\newglossaryentry{tout}{name={\textit{T\textsubscript{{out}}}},description={Outdoor temperature},symbol={{\textdegree~C}}}
+\newglossaryentry{ei}{name={\textit{E\textsubscript{a}}},description={Extraterrestrial irradiance},symbol={{W.m\textsuperscript{-2}}}}
+\newglossaryentry{znth}{name={$\theta_{z}$},description={Zenith angle},symbol={\textdegree~C}}
+\newglossaryentry{rmbe}{name={\textit{MBE\textsubscript{r}}},description={Relative mean bias error},symbol={\%}}
+\newglossaryentry{rrmse}{name={\textit{RMSE\textsubscript{r}}},description={Relative root-mean-square error},symbol={\%}}
+\newglossaryentry{mbe}{name={\textit{MBE}},description={Mean bias error},symbol={\%}}
+\newglossaryentry{re}{name={\textit{RE}},description={Relative error},symbol={\%}}
+\newglossaryentry{r2}{name={\textit{R\textsuperscript{2}}},description={Coefficient of determination}}
+\newglossaryentry{cdf}{name={\textit{CDF}},description={Cumulative distribution function},symbol={\%}}
+\newglossaryentry{recum}{name={\textit{RE\textsubscript{Cum}}},description={Relative error of the cumulative daily exposure},symbol={\%}}
+\newglossaryentry{xsim}{name={$\hat{x}_{i}$},description={Simulation value for timestep $i$}}
+\newglossaryentry{xmea}{name={\textit{x\textsubscript{i}}},description={Measurement value for timestep $i$}}
+\newglossaryentry{n}{name={\textit{N}},description={Number of timesteps}}
+\newglossaryentry{avgxmea}{name={$\overline{x}_{meas}$},description={Average of all measurements}}
+\newglossaryentry{avgx}{name={$\overline{x}$},description={Average of the ten simulations for each setup (simulation method and solar model)}}
+\newglossaryentry{io}{name={\textit{I/O Ratio}},description={Indoor/outdoor ratio}}
+\newglossaryentry{a}{name={\textit{A}},description={Area},symbol={m\textsuperscript{2}}}
+\newglossaryentry{au}{name={\textit{A\textsubscript{u}}},description={Area of all surfaces},symbol={m\textsuperscript{2}}}
+\newglossaryentry{ach}{name={\textit{ACH}},description={Air changes per hour},symbol={h\textsuperscript{-1}}}
+\newglossaryentry{achr}{name={\textit{ACH\textsubscript{r}}},description={Air changes per hour ratio}}
+\newglossaryentry{bri}{name={\textit{BRI}},description={Biological risk index},symbol={\%}}
+\newglossaryentry{c}{name={\textit{C\textsubscript{i}}},description={Size-fractioned mass concentration}}
+\newglossaryentry{cn}{name={\textit{C\textsubscript{N}}},description={Particle counts per volume of size channel $i$},symbol={m\textsuperscript{-3}}}
+\newglossaryentry{cout}{name={\textit{C\textsubscript{out}}},description={Outdoor mass concentration},symbol={\textmu g.m\textsuperscript{-3}}}
+\newglossaryentry{ct}{name={\textit{C(t)}},description={Mean concentration},symbol={mg.m\textsuperscript{-3}}}
+\newglossaryentry{di}{name={\textit{D\textsubscript{i}}},description={Mean diameter of size channel $i$},symbol={\textmu m}}
+\newglossaryentry{dsi}{name={\textit{DSI}},description={Daily Span Index}}
+\newglossaryentry{elm}{name={\textit{eLM}},description={Equivalent lifetime multiplier}}
+\newglossaryentry{i}{name={\textit{i}},description={Size channel (0.3, 0.5, 1, 2.5, 5, 10)}}
+\newglossaryentry{ki}{name={\textit{K\textsubscript{i}}},description={Deposition rate of size channel $i$},symbol={h\textsuperscript{-1}}}
+\newglossaryentry{lse}{name={\textit{LSE}},description={Least squares error},symbol={\%}}
+\newglossaryentry{ma}{name={\textit{MA}},description={Moving average}}
+\newglossaryentry{mi}{name={\textit{m\textsubscript{i}}},description={Mass of one particle of size channel $i$},symbol={\textmu g}}
+\newglossaryentry{np}{name={\textit{Np}},description={Particle counts}}
+\newglossaryentry{nresusp}{name={\textit{n}},description={Number of resuspension events}}
+\newglossaryentry{pci}{name={\textit{PCI}},description={Particle conservation index},symbol={\%}}
+\newglossaryentry{pm}{name={\textit{PM}},description={Particulate matter},symbol={\textmu g.m\textsuperscript{-3}}}
+\newglossaryentry{pi}{name={\textit{P\textsubscript{i}}},description={Penetration factor of size channel $i$}}
+\newglossaryentry{q}{name={\textit{Q}},description={Ventilation air flow rate},symbol={m\textsuperscript{3}.h\textsuperscript{-1}}}
+\newglossaryentry{shi}{name={\textit{SHI}},description={Spatial homogeneity index}}
+\newglossaryentry{r}{name={\textit{R}},description={Reduction coefficient}}
+\newglossaryentry{ts}{name={\textit{t}},description={Time step},symbol={h}}
+\newglossaryentry{tpm}{name={\textit{TPM}},description={Total particulate matter},symbol={\textmu g.m\textsuperscript{-3}}}
+\newglossaryentry{vol}{name={\textit{Vol}},description={Room volume},symbol={m\textsuperscript{3}}}
+\newglossaryentry{vi}{name={\textit{v\textsubscript{i}}},description={Deposition velocity of size channel $i$},symbol={m.s\textsuperscript{-1}}}
+\newglossaryentry{x}{name={\textit{x}},description={Measurement},symbol={\textmu g.m\textsuperscript{-3}}}
+\newglossaryentry{rho}{name={$\rho_{p}$},description={Particle density},symbol={\textmu g.m\textsuperscript{-3}}}
+\newglossaryentry{perfidx}{name={\textit{PI}},description={Performance index},symbol={\%}}
+\newglossaryentry{g}{name={\textit{G}},description={Generation of pollutants},symbol={mg.h\textsuperscript{-1}}}
+\newglossaryentry{cext}{name={\textit{C\textsubscript{ext}}},description={Outdoor concentration},symbol={mg.m\textsuperscript{-3}}}
+\newglossaryentry{vud}{name={$\nu_{d}$},description={Deposition rate},symbol={mg.m\textsuperscript{-2}.h\textsuperscript{-1}}}
+\newglossaryentry{sarea}{name={\textit{S}},description={Area of deposition surface},symbol={m\textsuperscript{2}}}
+\newglossaryentry{qac}{name={\textit{Q\textsubscript{ac}}},description={Air flow rate through the air purifier},symbol={m\textsuperscript{3}.h\textsuperscript{-1}}}
+\newglossaryentry{eac}{name={$\varepsilon_{ac}$},description={Efficiency of air purifier}}
+\newglossaryentry{cequi}{name={\textit{C\textsubscript{equi}}},description={Equilibrium concentration},symbol={mg.m\textsuperscript{-3}}}
+\newglossaryentry{temp}{name={\textit{T\textsubscript{a}}},description={Temperature of the air},symbol={\textdegree C}}
+\newglossaryentry{p}{name={\textit{P}},description={Atmospheric pressure},symbol={kPa}}
+\newglossaryentry{rain}{name={\textit{RR}},description={Rain rate},symbol={mm.h\textsuperscript{-1}}}
+\newglossaryentry{winddirection}{name={$\varphi_{wind}$},description={Wind direction},symbol={\textdegree}}
+\newglossaryentry{windvelocity}{name={\textit{V\textsubscript{wind}}},description={Wind velocity},symbol={m.s\textsuperscript{-1}}}
+\newglossaryentry{czero}{name={\textit{C\textsubscript{0}}},description={Concentration when \textit{t} = 0},symbol={mg.m\textsuperscript{-3}}}
+\newglossaryentry{vs}{name={\textit{v\textsubscript{s}}},description={Sample volume},symbol={m\textsuperscript{3}}}
+\newglossaryentry{xday}{name={\textit{$\overline{x}\textsubscript{day}$}},description={Daily running average of measurement \textit{x}},symbol={\textmu g.m\textsuperscript{-3}}}
+\newglossaryentry{si}{name={\textit{S\textsubscript{i}}},description={Emission rate of particles of size channel \textit{i}},symbol={h\textsuperscript{-1}}}
+\newglossaryentry{nclass}{name={\textit{n\textsubscript{Class}}},description={Counts for a specific conservation class},symbol={\textit{}}}
+\newglossaryentry{ntotal}{name={\textit{n\textsubscript{Total}}},description={Total number of measurements},symbol={\textit{}}}
+\newglossaryentry{mrf}{name={\textit{MRF}},description={Mould risk factor},symbol={\textit{}}}
+%\newglossaryentry{shi}{name={\textit{SHI}},description={Spatial Homogeneity Index},symbol={\textit{}}}
+\newglossaryentry{prd}{name={\textit{PRD}},description={Predicted risk of damage},symbol={\%}}
+\newglossaryentry{pmv}{name={\textit{PMV}},description={Predicted mean vote},symbol={\textit{}}}
+\newglossaryentry{ppd}{name={\textit{PPD}},description={Predicted percentage of dissatisfaction},symbol={\%}}
+\newglossaryentry{hmr}{name={\textit{HMR}},description={Heritage microclimate risk},symbol={\textit{}}}
+\newglossaryentry{el}{name={\textit{EL}},description={Expected lifetime},symbol={years}}
+\newglossaryentry{pi_chemical}{name={\textit{PI}},description={Preservation index},symbol={years or -}}
+\newglossaryentry{pi_compliance}{name={\textit{PI\textsubscript{compliance}}},description={Performance index},symbol={\%}}
+\newglossaryentry{lm}{name={\textit{LM}},description={Lifetime multiplier},symbol={\textit{}}}
+\newglossaryentry{twpi}{name={\textit{TWPI}},description={Time-weighted preservation index},symbol={years}}
+\newglossaryentry{twel}{name={\textit{TWEL}},description={Time-weighted expected lifetime},symbol={years}}
+\newglossaryentry{ki_degrad}{name={\textit{k\textsubscript{i}}},description={Degradation rate},symbol={years\textsuperscript{-1}}}
+\newglossaryentry{dp}{name={\textit{DP}},description={Degree of polymerisation},symbol={\textit{}}}
+\newglossaryentry{emc}{name={\textit{EMC}},description={Equilibrium moisture content},symbol={\%}}
+\newglossaryentry{rh_response}{name={\textit{RH\textsubscript{response}}},description={Relative humidity response},symbol={\%}}
+\newglossaryentry{dc_mechanical}{name={\textit{DC\textsubscript{mechanical}}},description={Dimensional change},symbol={\%}}
+\newglossaryentry{DI}{name={\textit{D\textsubscript{I}}},description={Initial dimension},symbol={\textit{}}}
+\newglossaryentry{ct_dc}{name={\textit{C\textsubscript{T}}},description={Average tangential dimensional change coefficient},symbol={\textit{}}}
+\newglossaryentry{max_dc}{name={\textit{MaxDC}},description={Maximum percentage dimensional change},symbol={\%}}
+\newglossaryentry{max_emc}{name={\textit{MaxEMC}},description={Maximum equilibrium moisture content},symbol={\%}}
+\newglossaryentry{min_emc}{name={\textit{MinEMC}},description={Minimum equilibrium moisture content},symbol={\%}}
+\newglossaryentry{r_pearson}{name={\textit{R\textsubscript{Pearson}}},description={Pearson coefficient},symbol={\textit{}}}
+\newglossaryentry{mrf_sedlbauer_0}{name={\textit{MRF\textsubscript{Sedlbauer0}}},description={Mould risk factor adapted for Sedlbauer substrate 0 (optimal)},symbol={\textit{}}}
+\newglossaryentry{mrf_sedlbauer_I}{name={\textit{MRF\textsubscript{SedlbauerI}}},description={Mould risk factor adapted for Sedlbauer substrate I (organic)},symbol={\textit{}}}
+\newglossaryentry{buffering}{name={$\overline{B}_{\Delta RH}$},description={Average buffering effect},symbol={\%}}
+\newglossaryentry{rmse}{name={\textit{RMSE}},description={Root-mean-square error},symbol={(Variable-dependant)}}
+\newglossaryentry{fi}{name={\textit{F\textsubscript{i}}},description={Frequency of residuals},symbol={\%}}
+\newglossaryentry{ic}{name={\textit{IC}},description={Inequality coefficient},symbol={}}
+\newglossaryentry{qv}{name={\textit{Q\textsubscript{v}}},description={Prediction rate},symbol={}}
+\newglossaryentry{uvalue}{name={\textit{U-value}},description={Overall heat transfer coefficient},symbol={W.m\textsuperscript{-2}.K\textsuperscript{-1}}}
+\newglossaryentry{shgc}{name={\textit{SHGC}},description={Solar heat gain coefficient},symbol={}}
+\newglossaryentry{tvis}{name={\textit{T\textsubscript{vis}}},description={Visible transmittance},symbol={}}
+\newglossaryentry{di_mechanical}{name={\textit{D\textsubscript{I}}},description={Initially assumed dimension},symbol={\%}}
+\newglossaryentry{ph}{name={\textit{pH}},description={Measure of acidity},symbol={}}
+\newglossaryentry{e_2ph}{name={\textit{E\textsubscript{2PH}}},description={Illuminance matrix for 2PH method},symbol={lx}}
+\newglossaryentry{e_3ph}{name={\textit{E\textsubscript{3PH}}},description={Illuminance matrix for 3PH method},symbol={lx}}
+\newglossaryentry{e_4ph}{name={\textit{E\textsubscript{4PH}}},description={Illuminance matrix for 4PH method},symbol={lx}}
+\newglossaryentry{e_5ph}{name={\textit{E\textsubscript{5PH}}},description={Illuminance matrix for 5PH method},symbol={lx}}
+\newglossaryentry{e_6ph}{name={\textit{E\textsubscript{6PH}}},description={Illuminance matrix for 6PH method},symbol={lx}}
+\newglossaryentry{dc}{name={\textit{DC}},description={Daylight coefficients matrix},symbol={lx.cd\textsuperscript{-1}.m\textsuperscript{2}}}
+\newglossaryentry{s}{name={\textit{S}},description={Sky matrix},symbol={cd.m\textsuperscript{-2}}}
+\newglossaryentry{v}{name={\textit{V}},description={View matrix},symbol={lx.cd\textsuperscript{-1}.m\textsuperscript{2}}}
+\newglossaryentry{d}{name={\textit{D}},description={Daylight matrix},symbol={}}
+\newglossaryentry{t}{name={\textit{T}},description={Transmission matrix},symbol={sr\textsuperscript{-1}}}
+\newglossaryentry{f}{name={\textit{F}},description={Façade matrix},symbol={}}
+
+
+% Acronym
+\newacronym{iec}{IEC}{Indoor Environmental Conditions}
+\newacronym{iaq}{IAQ}{Indoor Air Quality}
+\newacronym{ieq}{IEQ}{Indoor Environmental Quality}
+\newacronym{2ph}{2PH}{2-Phase method}
+\newacronym{3ph}{3PH}{3-Phase method}
+\newacronym{4ph}{4PH}{4-Phase method}
+\newacronym{5ph}{5PH}{5-Phase method}
+\newacronym{6ph}{6PH}{6-Phase method}
+\newacronym{ufp}{UFP}{Upper Floor Plan}
+\newacronym{lfp}{LFP}{Lower Floor Plan}
+\newacronym{disc}{DISC}{Direct Insolation Simulation Code}
+\newacronym{ir}{IR}{Infrared Radiation}
+\newacronym{uv}{UV}{Ultraviolet Radiation}
+\newacronym{cfd}{CFD}{Computational Fluid Dynamics}
+\newacronym{tgm}{TGM}{Tracer Gas Method}
+\newacronym{hvac}{HVAC}{Heating, Ventilation and Air Conditioning}
+\newacronym{bjuc}{BJUC}{Biblioteca Joanina da Universidade de Coimbra (Joanina Library)}
+\newacronym{mcuc}{MCUC}{Museu da Ciência da Universidade de Coimbra (Science Museum of the University of Coimbra)}
+\newacronym{oltc}{OLTC}{Old Library of Trinity College Dublin}
+\newacronym{wwr}{WWR}{Window to Wall Ratio}
+\newacronym{unesco}{UNESCO}{United Nations Educational Scientific and Cultural Organization}
+\newacronym{ashrae}{ASHRAE}{American Society of Heating, Refrigerating and Air-Conditioning Engineers}
+\newacronym{wu}{WU}{Weather Underground}
+\newacronym{epw}{EPW}{EnergyPlus Weather file}
+\newacronym{iesna}{IESNA}{Illuminating Engineering Society of North America}
+\newacronym{cci}{CCI}{Canadian Conservation Institute}
+\newacronym{iwec}{IWEC}{International Weather for Energy Calculations}
+\newacronym{mibac}{MIBAC}{Ministero per I Beni E Le Attività Culturali}
+\newacronym{ipi}{IPI}{Image Permanence Institute}
+\newacronym{lim}{LIM}{Lowest Isopleth for Mould}
+\newacronym{lma}{LMA}{Last Measured Average}
+\newacronym{ysc}{YSC}{Yield Strain Criterion}
+\newacronym{tmy}{TMY}{Typical Meteorological Year}
+\newacronym{afn}{AFN}{Airflow Network}
+\newacronym{hamt}{HAMT}{Heat and Moisture Transfer}
+\newacronym{dds}{DDS}{Direct Daylight Simulation}
+\newacronym{ipcc}{IPCC}{Intergovernmental Panel on Climate Change}
+
+
+
+
+
+
+
+
+
+

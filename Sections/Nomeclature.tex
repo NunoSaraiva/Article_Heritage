@@ -1,0 +1,28 @@
+% TABELA NOMENCLATURA
+\section*{Nomeclature}
+
+% Remove title of glossary
+\renewcommand{\glossarysection}[2][]{}
+
+\hspace{0.4cm}\textbf{Symbol} \hspace{1.2cm} \textbf{Description} \hspace{7cm} \textbf{Units}
+\hrule
+
+
+\glsnogroupskiptrue
+\printglossary[type=main, title={Nomeclature}]%
+
+\addcontentsline{toc}{chapter}{Nomeclature} \mtcaddchapter
+
+\section*{Abbreviations and Acronyms}
+
+% Remove title of glossary
+\renewcommand{\glossarysection}[2][]{}
+        
+\hspace{0.4cm}\textbf{Symbol} \hspace{1.2cm} \textbf{Description}
+\hrule
+
+\glsnogroupskiptrue
+\printglossary[type=\acronymtype,title={Abbreviations and Acronyms}]
+
+\addcontentsline{toc}{chapter}{Abbreviations and Acronyms} \mtcaddchapter
+

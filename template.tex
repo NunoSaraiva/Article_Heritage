@@ -2,7 +2,7 @@
 %  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
 
 %=================================================================
-\documentclass[journal,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
+\documentclass[heritage,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
 %\documentclass[preprints,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
 % For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal. Changing "submit" to "accept" before posting will remove line numbers.
 
@@ -69,15 +69,28 @@
 % Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
 %% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
 
+% Units
+\input{Aux_Files/Units}
+\usepackage{subcaption}
+\usepackage{textgreek}
+
+% DEFINE ABBREVIATIONS
+\newcommand{\etal}{\textit{et al}.}
+\newcommand{\ie}{\textit{i}.\textit{e}.}
+\newcommand{\eg}{\textit{e}.\textit{g}.}
+\newcommand{\etc}{\textit{etc}.}
+\newcommand{\temp}{\textit{TEMP}}
+\newcommand{\rh}{\textit{RH}}
+
 %=================================================================
 % Full title of the paper (Capitalized)
 \Title{Hygrothermal simulation of a historic library: a framework to assess the impact of tourism}
 
 % Author Orchid ID: enter ID or remove command
 \newcommand{\orcidauthorA}{0000-0002-7805-002X} % Add \orcidA{} behind the author's name
-\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
-\newcommand{\orcidauthorC}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
-\newcommand{\orcidauthorD}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
+\newcommand{\orcidauthorB}{0000-0003-1312-8137} % Add \orcidB{} behind the author's name
+\newcommand{\orcidauthorC}{0000-0001-6947-4579} % Add \orcidB{} behind the author's name
+\newcommand{\orcidauthorD}{0000-0002-7015-6989} % Add \orcidB{} behind the author's name
 
 % Authors, for the paper (add full first names)
 \Author{Nuno Baía Saraiva $^{1}$\orcidA{}, Luísa Dias Pereira $^{2,}$*\orcidB{}, Adélio Rodrigues Gaspar $^{1}$\orcidC{}, and José Joaquim Costa$^{1}$\orcidD{}}
@@ -161,257 +174,33 @@ $^{2}$ \quad Low Carbon \& Resource Efficiency, R\&D, Instituto de Soldadura e Q
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setcounter{section}{-1} %% Remove this when starting to work on the template.
-\section{How to Use this Template}
+% \setcounter{section}{-1} %% Remove this when starting to work on the template.
 
-The template details the sections that can be used in a manuscript. Note that the order and names of article sections may differ from the requirements of the journal (e.g., the positioning of the Materials and Methods section). Please check the instructions on the authors' page of the journal to verify the correct order and names. For any questions, please contact the editorial office of the journal or support@mdpi.com. For LaTeX-related questions please contact latex@mdpi.com.%\endnote{This is an endnote.} % To use endnotes, please un-comment \printendnotes below (before References). Only journal Laws uses \footnote.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INTRODUCTION
+\input{Sections/1_Intro}
 
-% The order of the section titles is different for some journals. Please refer to the "Instructions for Authors” on the journal homepage.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% METHODOLOGY
+\input{Sections/2_Method}
 
-\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESULTS AND DISCUSSION
+% \input{Sections/3_Results}
 
-Furthermore, integrated monitoring and simulation strategies have become indispensable tools for understanding the hygrothermal dynamics of these spaces~\cite{Camuffo2014}. Environmental monitoring campaigns provide essential data on indoor levels, seasonal variations, and responses to the outdoor climatic conditions.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONCLUSION
+\input{Sections/4_Conclusion}
 
-To complement empirical data, numerical simulation tools such as hygrothermal modelling have proven valuable in predicting indoor environmental behaviour under various scenarios, aiding decision-making processes related to conservation strategies~\cite{Lucchi2018}. Despite their potential, the use of simulation in heritage contexts remains limited, with most applications focused on energy performance in modern buildings~\cite{Iskandar2024}. 
-
-The further exploration of such approaches in the current work offers practitioners an evidence-based methodology to navigate complex environmental assessments to enhance the conservation of organic materials. Accordingly, the present chapter contributes to the field by focusing on three core objectives: \textit{(i)} survey the applicable standards and guidelines related to the preventive conservation of cultural heritage under hygrothermal stress; \textit{(ii)} conduct in situ monitoring of temperature and humidity conditions in selected case studies; and \textit{(iii)} employ dynamic simulation tools to assess hygrothermal behaviour under different scenarios. The goal is to characterise the indoor climate conditions in heritage buildings, evaluate the potential risks to collections, and support more informed and sustainable conservation decisions.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Materials and Methods}
-
-Materials and Methods should be described with sufficient details to allow others to replicate and build on published results. Please note that publication of your manuscript implicates that you must make all materials, data, computer code, and protocols associated with the publication available to readers. Please disclose at the submission stage any restrictions on the availability of materials or information. New methods and protocols should be described in detail while well-established methods can be briefly described and appropriately cited.
-
-Research manuscripts reporting large datasets that are deposited in a publicly avail-able database should specify where the data have been deposited and provide the relevant accession numbers. If the accession numbers have not yet been obtained at the time of submission, please state that they will be provided during review. They must be provided prior to publication.
-
-Interventionary studies involving animals or humans, and other studies require ethical approval must list the authority that provided approval and the corresponding ethical approval code.
-
-In this section, where applicable, authors are required to disclose details of how gen-erative artificial intelligence (GenAI) has been used in this paper (e.g., to generate text, data, or graphics, or to assist in study design, data collection, analysis, or interpretation). The use of GenAI for superficial text editing (e.g., grammar, spelling, punctuation, and formatting) does not need to be declared.
-
-\begin{quote}
-This is an example of a quote.
-\end{quote}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Results}
-
-This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
-\subsection{Subsection}
-\subsubsection{Subsubsection}
-
-Bulleted lists look like this:
-\begin{itemize}
-\item	First bullet;
-\item	Second bullet;
-\item	Third bullet.
-\end{itemize}
-
-Numbered lists can be added as follows:
-\begin{enumerate}
-\item	First item; 
-\item	Second item;
-\item	Third item.
-\end{enumerate}
-
-The text continues here.
-
-\subsection{Figures, Tables and Schemes}
-
-All figures and tables should be cited in the main text as Figure~\ref{fig1}, Table~\ref{tab1}, etc.
-
-\begin{figure}[H]
-%\isPreprints{\centering}{} % Only used for preprints
-\includegraphics[width=4.0 cm]{Definitions/logo-mdpi}
-\caption{This is a figure. Schemes follow the same formatting.\label{fig1}}
-\end{figure}   
-\unskip
-
-\begin{table}[H] 
-%\small % Change table font size
-\caption{This is a table caption. Tables should be placed in the main text near to the first time they are~cited.\label{tab1}}
-%\isPreprints{\centering}{} % Only used for preprints
-\begin{tabularx}{\textwidth}{CCC}
-\toprule
-\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
-\midrule
-Entry 1		& Data			& Data\\
-Entry 2		& Data			& Data \textsuperscript{1}\\
-\bottomrule
-\end{tabularx}
-
-\noindent{\footnotesize{\textsuperscript{1} Tables may have a footer.}}
-\end{table}
-
-The text continues here (Figure~\ref{fig2} and Table~\ref{tab2}).
-
-% Example of a figure that spans the whole page width and with subfigures. The same concept works for tables, too.
-\begin{figure}[H]
-%\isPreprints{}{% This command is only used for ``preprints''.
-\begin{adjustwidth}{-\extralength}{0cm}
-\centering
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
-%\hfill
-\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}\\
-\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
-%\hfill
-\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
-%\isPreprints{}{% This command is only used for ``preprints''.
-\end{adjustwidth}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-\caption{This is a wide figure. Schemes follow the same formatting. If there are multiple panels, they should be listed as: (\textbf{a}) Description of what is contained in the first panel. (\textbf{b}) Description of what is contained in the second panel. (\textbf{c}) Description of what is contained in the third panel. (\textbf{d}) Description of what is contained in the fourth panel. Figures should be placed in the main text near to the first time they are cited. A caption on a single line should be centered.\label{fig2}}
-\end{figure} 
-
-\begin{table}[H]
-\caption{This is a wide table.\label{tab2}}
-%\isPreprints{\centering}{% This command is only used for ``preprints''.
-	\begin{adjustwidth}{-\extralength}{0cm}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-%\isPreprints{\begin{tabularx}{\textwidth}{CCCC}}{% This command is only used for ``preprints''.
-		\begin{tabularx}{\fulllength}{CCCC}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-			\toprule
-			\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}     & \textbf{Title 4}\\
-			\midrule
-\multirow[m]{3}{*}{Entry 1 *}	& Data			& Data			& Data\\
-			  	                   & Data			& Data			& Data\\
-			             	      & Data			& Data			& Data\\
-                   \midrule
-\multirow[m]{3}{*}{Entry 2}    & Data			& Data			& Data\\
-			  	                  & Data			& Data			& Data\\
-			             	     & Data			& Data			& Data\\
-			\bottomrule
-		\end{tabularx}
-%		\isPreprints{}{% This command is only used for ``preprints''.
-	\end{adjustwidth}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-	\noindent{\footnotesize{* Tables may have a footer.}}
-\end{table}
-
-%\begin{listing}[H]
-%\caption{Title of the listing}
-%\rule{\columnwidth}{1pt}
-%\raggedright Text of the listing. In font size footnotesize, small, or normalsize. Preferred format: left aligned and single spaced. Preferred border format: top border line and bottom border line.
-%\rule{\columnwidth}{1pt}
-%\end{listing}
-
-Text.
-
-Text.
-
-\subsection{Formatting of Mathematical Components}
-
-This is the example 1 of equation:
-\begin{linenomath}
-\begin{equation}
-a = 1,
-\end{equation}
-\end{linenomath}
-the text following an equation need not be a new paragraph. Please punctuate equations as regular text.
-%% If the documentclass option "submit" is chosen, please insert a blank line before and after any math environment (equation and eqnarray environments). This ensures correct linenumbering. The blank line should be removed when the documentclass option is changed to "accept" because the text following an equation should not be a new paragraph.
-
-This is the example 2 of equation:
-%\isPreprints{}{% This command is only used for ``preprints''.
-\begin{adjustwidth}{-\extralength}{0cm}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-\begin{equation}
-a = b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z
-\end{equation}
-%\isPreprints{}{% This command is only used for ``preprints''.
-\end{adjustwidth}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-
-%% Example of a page in landscape format (with table and table footnote).
-%\startlandscape
-%\begin{table}[H] %% Table in wide page
-%%\isPreprints{\centering}{} % This command is only used for ``preprints''.
-%\caption{This is a very wide table.\label{tab3}}
-%	\begin{tabularx}{\textwidth}{CCCC}
-%		\toprule
-%		\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}	& \textbf{Title 4}\\
-%		\midrule
-%		Entry 1		& Data			& Data			& This cell has some longer content that runs over two lines.\\
-%		Entry 2		& Data			& Data			& Data\textsuperscript{1}\\
-%		\bottomrule
-%	\end{tabularx}
-%%\isPreprints{}{% This command is only used for ``preprints''.
-%	\begin{adjustwidth}{+\extralength}{0cm}
-%%} % If the paper is ``preprints'', please uncomment this parenthesis.
-%		\noindent\footnotesize{\textsuperscript{1} This is a table footnote.}
-%%\isPreprints{}{% This command is only used for ``preprints''.
-%	\end{adjustwidth}
-%%} % If the paper is ``preprints'', please uncomment this parenthesis.
-%\end{table}
-%\finishlandscape
-
-Please punctuate equations as regular text. Theorem-type environments (including propositions, lemmas, corollaries etc.) can be formatted as follows:
-%% Example of a theorem:
-\begin{Theorem}
-Example text of a theorem.
-\end{Theorem}
-
-The text continues here. Proofs must be formatted as follows:
-
-%% Example of a proof:
-\begin{proof}[Proof of Theorem 1]
-Text of the proof. Note that the phrase ``of Theorem 1'' is optional if it is clear which theorem is being referred to.
-\end{proof}
-The text continues here.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Discussion}
-
-Authors should discuss the results and how they can be interpreted from the perspective of previous studies and of the working hypotheses. The findings and their implications should be discussed in the broadest context possible. Future research directions may also be highlighted.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Conclusions}
-
-This section is not mandatory, but can be added to the manuscript if the discussion is unusually long or complex.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Patents}
-
-This section is not mandatory, but may be added if there are patents resulting from the work reported in this manuscript.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{6pt} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% optional
-%\supplementary{The following supporting information can be downloaded at:  \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.}
-
-% Only for journal Methods and Protocols:
-% If you wish to submit a video article, please do so with any other supplementary material.
-% \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title. A supporting video article is available at doi: link.}
-
-% Only used for preprtints:
-% \supplementary{The following supporting information can be downloaded at the website of this paper posted on \href{https://www.preprints.org/}{Preprints.org}.}
-
-% Only for journal Hardware:
-% If you wish to submit a video article, please do so with any other supplementary material.
-% \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.\vspace{6pt}\\
-%\begin{tabularx}{\textwidth}{lll}
-%\toprule
-%\textbf{Name} & \textbf{Type} & \textbf{Description} \\
-%\midrule
-%S1 & Python script (.py) & Script of python source code used in XX \\
-%S2 & Text (.txt) & Script of modelling code used to make Figure X \\
-%S3 & Text (.txt) & Raw data from experiment X \\
-%S4 & Video (.mp4) & Video demonstrating the hardware in use \\
-%... & ... & ... \\
-%\bottomrule
-%\end{tabularx}
-%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% REMAINING
+%\input{Aux_Files/Text_Template_Aux}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \authorcontributions{For research articles with several authors, a short paragraph specifying their individual contributions must be provided. The following statements should be used ``Conceptualization, X.X. and Y.Y.; methodology, X.X.; software, X.X.; validation, X.X., Y.Y. and Z.Z.; formal analysis, X.X.; investigation, X.X.; resources, X.X.; data curation, X.X.; writing---original draft preparation, X.X.; writing---review and editing, X.X.; visualization, X.X.; supervision, X.X.; project administration, X.X.; funding acquisition, Y.Y. All authors have read and agreed to the published version of the manuscript.'', please turn to the  \href{http://img.mdpi.org/data/contributor-role-instruction.pdf}{CRediT taxonomy} for the term explanation. Authorship must be limited to those who have contributed substantially to the work~reported.}
 
-\funding{Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX.'' and  and ``The APC was funded by XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.}
+\funding{The present work was funded by the Rectory of the University of Coimbra (UC) under the framework of the project ``BJUC-AHT - Monitorização e análise do ambiente interior na Biblioteca Joanina da Universidade de Coimbra'', and the doctoral Grant SFRH/BD/151356/2021 (\url{https://doi.org/10.54499/SFRH/BD/151356/2021}) financed by the Portuguese Foundation for Science and Technology (FCT), and with funds from the ``European Social Fund'' (FSE) and ``Programa Por Centro'' part of the Government Funds, under MIT Portugal Program.}
 
-\institutionalreview{In this section, you should add the Institutional Review Board Statement and approval number, if relevant to your study. You might choose to exclude this statement if the study did not require ethical approval. Please note that the Editorial Office might ask you for further information. Please add “The study was conducted in accordance with the Declaration of Helsinki, and approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving humans. OR “The animal study protocol was approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving animals. OR “Ethical review and approval were waived for this study due to REASON (please provide a detailed justification).” OR “Not applicable” for studies not involving humans or animals.}
+%\institutionalreview{In this section, you should add the Institutional Review Board Statement and approval number, if relevant to your study. You might choose to exclude this statement if the study did not require ethical approval. Please note that the Editorial Office might ask you for further information. Please add “The study was conducted in accordance with the Declaration of Helsinki, and approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving humans. OR “The animal study protocol was approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving animals. OR “Ethical review and approval were waived for this study due to REASON (please provide a detailed justification).” OR “Not applicable” for studies not involving humans or animals.}
 
-\informedconsent{Any research article describing a study involving humans should contain this statement. Please add ``Informed consent was obtained from all subjects involved in the study.'' OR ``Patient consent was waived due to REASON (please provide a detailed justification).'' OR ``Not applicable'' for studies not involving humans. You might also choose to exclude this statement if the study did not involve humans.
+%\informedconsent{Any research article describing a study involving humans should contain this statement. Please add ``Informed consent was obtained from all subjects involved in the study.'' OR ``Patient consent was waived due to REASON (please provide a detailed justification).'' OR ``Not applicable'' for studies not involving humans. You might also choose to exclude this statement if the study did not involve humans.
 
-Written informed consent for publication must be obtained from participating patients who can be identified (including by the patients themselves). Please state ``Written informed consent has been obtained from the patient(s) to publish this paper'' if applicable.}
+%Written informed consent for publication must be obtained from participating patients who can be identified (including by the patients themselves). Please state ``Written informed consent has been obtained from the patient(s) to publish this paper'' if applicable.}
 
 \dataavailability{We encourage all authors of articles published in MDPI journals to share their research data. In this section, please provide details regarding where data supporting reported results can be found, including links to publicly archived datasets analyzed or generated during the study. Where no new data were created, or where data is unavailable due to privacy or ethical restrictions, a statement is still required. Suggested Data Availability Statements are available in section ``MDPI Research Data Policies'' at \url{https://www.mdpi.com/ethics}.} 
 
@@ -426,9 +215,9 @@ Written informed consent for publication must be obtained from participating pat
 %% Only for journal Nursing Reports
 %\useofartificialintelligence{Please describe in detail any and all uses of artificial intelligence (AI) or AI-assisted tools used in the preparation of the manuscript. This may include, but is not limited to, language translation, language editing and grammar, or generating text. Alternatively, please state that “AI or AI-assisted tools were not used in drafting any aspect of this manuscript”.}
 
-\acknowledgments{In this section you can acknowledge any support given which is not covered by the author contribution or funding sections. This may include administrative and technical support, or donations in kind (e.g., materials used for experiments). Where GenAI has been used for purposes such as generating text, data, or graphics, or for study design, data collection, analysis, or interpretation of data, please add “During the preparation of this manuscript/study, the author(s) used [tool name, version information] for the purposes of [description of use]. The authors have reviewed and edited the output and take full responsibility for the content of this publication.”}
+\acknowledgments{The work was also developed under the framework of the project ``Climate change-based building design guidelines'' (\url{https://doi.org/10.54499/PTDC/EME-REN/3460/2021}).}
 
-\conflictsofinterest{Declare conflicts of interest or state ``The authors declare no conflicts of interest.'' Authors must identify and declare any personal circumstances or interest that may be perceived as inappropriately influencing the representation or interpretation of reported research results. Any role of the funders in the design of the study; in the collection, analyses or interpretation of data; in the writing of the manuscript; or in the decision to publish the results must be declared in this section. If there is no role, please state ``The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the results''.} 
+\conflictsofinterest{The authors declare no conflicts of interest.} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Optional
@@ -436,43 +225,52 @@ Written informed consent for publication must be obtained from participating pat
 %% Only for journal Encyclopedia
 %\entrylink{The Link to this entry published on the encyclopedia platform.}
 
-\abbreviations{Abbreviations}{
+\abbreviations{Acronyms}{
 The following abbreviations are used in this manuscript:
 \\
 
 \noindent 
 \begin{tabular}{@{}ll}
-MDPI & Multidisciplinary Digital Publishing Institute\\
-DOAJ & Directory of open access journals\\
-TLA & Three letter acronym\\
-LD & Linear dichroism
+BJUC & Biblioteca Joanina da Universidade de Coimbra \\
+FCT & Fundação para a Ciência e a Tecnologia
 \end{tabular}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Optional
-\appendixtitles{no} % Leave argument "no" if all appendix headings stay EMPTY (then no dot is printed after "Appendix A"). If the appendix sections contain a heading then change the argument to "yes".
-\appendixstart
-\appendix
-\section[\appendixname~\thesection]{}
-\subsection[\appendixname~\thesubsection]{}
-The appendix is an optional section that can contain details and data supplemental to the main text---for example, explanations of experimental details that would disrupt the flow of the main text but nonetheless remain crucial to understanding and reproducing the research shown; figures of replicates for experiments of which representative data are shown in the main text can be added here if brief, or as Supplementary Data. Mathematical proofs of results not central to the paper can be added as an appendix.
+\abbreviations{Nomenclature}{
+The following variables are used in this manuscript:
+\\
 
-\begin{table}[H] 
-\caption{This is a table caption.\label{tab5}}
-%\newcolumntype{C}{>{\centering\arraybackslash}X}
-\begin{tabularx}{\textwidth}{CCC}
-\toprule
-\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
-\midrule
-Entry 1		& Data			& Data\\
-Entry 2		& Data			& Data\\
-\bottomrule
-\end{tabularx}
-\end{table}
+\noindent 
+\begin{tabular}{@{}ll}
+\textit{TEMP} & Air temperature, \temperature\\
+\textit{RH} & Air relative humidity, \percentage
+\end{tabular}
+}
 
-\section[\appendixname~\thesection]{}
-All appendix sections must be cited in the main text. In the appendices, Figures, Tables, etc. should be labeled, starting with ``A''---e.g., Figure A1, Figure A2, etc.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Optional
+% \appendixtitles{no} % Leave argument "no" if all appendix headings stay EMPTY (then no dot is printed after "Appendix A"). If the appendix sections contain a heading then change the argument to "yes".
+% \appendixstart
+% \appendix
+% \section[\appendixname~\thesection]{}
+% \subsection[\appendixname~\thesubsection]{}
+% The appendix is an optional section that can contain details and data supplemental to the main text---for example, explanations of experimental details that would disrupt the flow of the main text but nonetheless remain crucial to understanding and reproducing the research shown; figures of replicates for experiments of which representative data are shown in the main text can be added here if brief, or as Supplementary Data. Mathematical proofs of results not central to the paper can be added as an appendix.
+
+% \begin{table}[H] 
+% \caption{This is a table caption.\label{tab5}}
+% %\newcolumntype{C}{>{\centering\arraybackslash}X}
+% \begin{tabularx}{\textwidth}{CCC}
+% \toprule
+% \textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
+% \midrule
+% Entry 1		& Data			& Data\\
+% Entry 2		& Data			& Data\\
+% \bottomrule
+% \end{tabularx}
+% \end{table}
+
+% \section[\appendixname~\thesection]{}
+% All appendix sections must be cited in the main text. In the appendices, Figures, Tables, etc. should be labeled, starting with ``A''---e.g., Figure A1, Figure A2, etc.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\isPreprints{}{% This command is only used for ``preprints''.
