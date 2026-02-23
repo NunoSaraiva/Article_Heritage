@@ -82,4 +82,28 @@ UNI.
 \newblock {\em {UNI 10829: Beni di interesse storico e artistico - Condizioni
   ambientali di conservazione - Misurazione ed analisi}}; UNI: Milano,  1999.
 
+\bibitem[Yang et~al.(2015)Yang, Fu, and Qin]{Yang2015}
+Yang, J.; Fu, H.; Qin, M.
+\newblock Evaluation of Different Thermal Models in EnergyPlus for Calculating
+  Moisture Effects on Building Energy Consumption in Different Climate
+  Conditions.
+\newblock In Proceedings of the Procedia Engineering. Elsevier Ltd,  2015, Vol.
+  121, pp. 1635--1641.
+\newblock {\url{https://doi.org/10.1016/j.proeng.2015.09.194}}.
+
+\bibitem[Pallin et~al.(2017)Pallin, Boudreaux, Shrestha, New, and
+  Adams]{Pallin2017}
+Pallin, S.; Boudreaux, P.R.; Shrestha, S.S.; New, J.R.; Adams, M.
+\newblock State-of-the-Art Hygrothermal Simulation Tools.
+\newblock Technical report, Oak Ridge National Laboratory,  2017.
+
+\bibitem[Aste et~al.(2019)Aste, Adhikari, Buzzetti, Torre, Pero, Huerto, and
+  Leonforte]{Aste2019}
+Aste, N.; Adhikari, R.S.; Buzzetti, M.; Torre, S.D.; Pero, C.D.; Huerto,
+  H.E.C.; Leonforte, F.
+\newblock Microclimatic monitoring of the Duomo ( Milan Cathedral ):
+  Risks-based analysis for the conservation of its cultural heritage.
+\newblock {\em Building and Environment} {\bf 2019}, {\em 148},~240--257.
+\newblock {\url{https://doi.org/10.1016/j.buildenv.2018.11.015}}.
+
 \end{thebibliography}
