@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2026.2.16)  20 FEB 2026 10:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2026.2.16)  23 FEB 2026 09:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1281,7 +1281,7 @@ LaTeX Encoding Info:    Ignoring declaration for text command \accTILDE (encodin
 ))
 Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/*}. on input line 69.
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 174.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 185.
  (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
  (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
@@ -1391,36 +1391,37 @@ Package cleveref Info: always capitalise cross-reference names on input line 785
 Package cleveref Info: no abbreviation of names on input line 7852.
 )
 ==> First Aid for cleveref.sty applied!
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 174.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 185.
 (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-) (template.aux)
+)
+No file template.aux.
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 174.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 174.
- (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 185.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 185.
+(C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count428
@@ -1435,13 +1436,13 @@ LaTeX Font Info:    ... okay on input line 174.
 \makeMPintoPDFobject=\count433
 \everyMPtoPDFconversion=\toks64
 )
-LaTeX Info: Redefining \microtypecontext on input line 174.
-Package microtype Info: Applying patch `item' on input line 174.
-Package microtype Info: Applying patch `toc' on input line 174.
-Package microtype Info: Applying patch `eqnum' on input line 174.
-Package microtype Info: Applying patch `footnote' on input line 174.
-Package microtype Info: Applying patch `verbatim' on input line 174.
-LaTeX Info: Redefining \microtypesetup on input line 174.
+LaTeX Info: Redefining \microtypecontext on input line 185.
+Package microtype Info: Applying patch `item' on input line 185.
+Package microtype Info: Applying patch `toc' on input line 185.
+Package microtype Info: Applying patch `eqnum' on input line 185.
+Package microtype Info: Applying patch `footnote' on input line 185.
+Package microtype Info: Applying patch `verbatim' on input line 185.
+LaTeX Info: Redefining \microtypesetup on input line 185.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1457,7 +1458,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ) (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 174.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 185.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1500,50 +1501,49 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package newfloat Info: `float' package detected.
-Package hyperref Info: Link coloring ON on input line 174.
-(template.out) (template.out)
+Package hyperref Info: Link coloring ON on input line 185.
 \@outlinefile=\write4
 \openout4 = `template.out'.
 
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 174.
- (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 185.
+(C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 174.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 185.
  (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 174.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 185.
  (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 174.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 185.
  (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 174.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 185.
  (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 174.
+(Font)              scaled to size 10.42007pt on input line 185.
  (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 174.
+(Font)              scaled to size 7.91925pt on input line 185.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 174.
+(Font)              scaled to size 6.25204pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 174.
+(Font)              scaled to size 10.42007pt on input line 185.
  (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 174.
+(Font)              scaled to size 7.91925pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 174.
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 174.
+(Font)              scaled to size 6.25204pt on input line 185.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 185.
  (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
@@ -1554,14 +1554,13 @@ Package microtype Info: Loading generic protrusion settings for font family
  (C:\Users\Acer\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 174.
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 185.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
-(Font)                  U/msb/m/n --> U/msb/m/n on input line 174.
+(Font)                  U/msb/m/n --> U/msb/m/n on input line 185.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
-(Font)                  U/msb/m/n --> U/msb/m/n on input line 174.
-Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 174.
-Package marginnote Info: right page because not two side mode on input line 174.
-Package marginnote Info: xpos seems to be 167.01753pt on input line 174.
+(Font)                  U/msb/m/n --> U/msb/m/n on input line 185.
+Package marginnote Info: right page because not two side mode on input line 185.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 185.
 Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
 (epstopdf)                    date: 2026-02-16 09:42:47
 (epstopdf)                    size: 563678 bytes
@@ -1569,43 +1568,53 @@ Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
 (epstopdf)                    date: 2026-02-16 09:47:52
 (epstopdf)                    size: 13243 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=Definitions/logo-mdpi-eps-converted-to.pdf Definitions/logo-mdpi.eps>
-(epstopdf)             \includegraphics on input line 174.
+(epstopdf)             \includegraphics on input line 185.
 Package epstopdf Info: Output file is already uptodate.
-<Definitions/logo-mdpi-eps-converted-to.pdf, id=33, 74.2775pt x 49.18375pt>
+<Definitions/logo-mdpi-eps-converted-to.pdf, id=9, 74.2775pt x 49.18375pt>
 File: Definitions/logo-mdpi-eps-converted-to.pdf Graphic file (type pdf)
 <use Definitions/logo-mdpi-eps-converted-to.pdf>
-Package pdftex.def Info: Definitions/logo-mdpi-eps-converted-to.pdf  used on input line 174.
+Package pdftex.def Info: Definitions/logo-mdpi-eps-converted-to.pdf  used on input line 185.
 (pdftex.def)             Requested size: 42.96877pt x 28.45274pt.
-<Definitions/logo-orcid.pdf, id=35, 102.3825pt x 102.3825pt>
+<Definitions/logo-orcid.pdf, id=11, 102.3825pt x 102.3825pt>
 File: Definitions/logo-orcid.pdf Graphic file (type pdf)
 <use Definitions/logo-orcid.pdf>
-Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 174.
+Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 185.
 (pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
 File: Definitions/logo-orcid.pdf Graphic file (type pdf)
 <use Definitions/logo-orcid.pdf>
-Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 174.
+Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 185.
 (pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
 File: Definitions/logo-orcid.pdf Graphic file (type pdf)
 <use Definitions/logo-orcid.pdf>
-Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 174.
+Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 185.
 (pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
 File: Definitions/logo-orcid.pdf Graphic file (type pdf)
 <use Definitions/logo-orcid.pdf>
-Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 174.
+Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 185.
 (pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 174.
+(Font)              scaled to size 8.33606pt on input line 185.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 174.
+(Font)              scaled to size 5.21004pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 174.
+(Font)              scaled to size 8.33606pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 174.
+(Font)              scaled to size 5.21004pt on input line 185.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (Sections/1_Intro) (Sections/2_Method
+ (Sections/1_Intro
+
+Package natbib Warning: Citation `Camuffo2014' on page 1 undefined on input line 5.
+
+
+Package natbib Warning: Citation `Lucchi2018' on page 1 undefined on input line 7.
+
+
+Package natbib Warning: Citation `Iskandar2024' on page 1 undefined on input line 7.
+
+) (Sections/2_Method
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1618,24 +1627,48 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 {C:/Users/Acer/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Definitions/logo-mdpi-eps-converted-to.pdf> <./Definitions/logo-orcid.pdf>]
 
+LaTeX Warning: Reference `fig:HygroMonit' on page 2 undefined on input line 7.
+
+
 LaTeX Warning: Reference `fig:BJUC_Monit_Missing' on page 2 undefined on input line 7.
 
-<images/11-hygrothermal/5a.pdf, id=65, 298.11375pt x 270.00874pt>
+<images/11-hygrothermal/5a.pdf, id=35, 298.11375pt x 270.00874pt>
 File: images/11-hygrothermal/5a.pdf Graphic file (type pdf)
 <use images/11-hygrothermal/5a.pdf>
 Package pdftex.def Info: images/11-hygrothermal/5a.pdf  used on input line 11.
 (pdftex.def)             Requested size: 315.48538pt x 285.7588pt.
-<images/11-hygrothermal/InsideBook1.PNG, id=70, 276.43275pt x 369.7815pt>
+
+Package natbib Warning: Citation `Bulow2002' on page 2 undefined on input line 18.
+
+
+Package natbib Warning: Citation `Bulow2002' on page 2 undefined on input line 18.
+
+
+Package natbib Warning: Citation `ASHRAE2023' on page 2 undefined on input line 18.
+
+
+LaTeX Warning: Reference `fig:InsideBookDepict' on page 2 undefined on input line 18.
+
+<images/11-hygrothermal/InsideBook1.PNG, id=36, 276.43275pt x 369.7815pt>
 File: images/11-hygrothermal/InsideBook1.PNG Graphic file (type png)
 <use images/11-hygrothermal/InsideBook1.PNG>
 Package pdftex.def Info: images/11-hygrothermal/InsideBook1.PNG  used on input line 22.
 (pdftex.def)             Requested size: 177.45863pt x 237.39285pt.
-<images/11-hygrothermal/InsideBook2.PNG, id=72, 277.035pt x 372.79276pt>
+<images/11-hygrothermal/InsideBook2.PNG, id=38, 277.035pt x 372.79276pt>
 File: images/11-hygrothermal/InsideBook2.PNG Graphic file (type png)
 <use images/11-hygrothermal/InsideBook2.PNG>
 Package pdftex.def Info: images/11-hygrothermal/InsideBook2.PNG  used on input line 24.
 (pdftex.def)             Requested size: 177.45863pt x 238.79701pt.
 
+LaTeX Warning: Reference `fig:HygroMonit' on page 2 undefined on input line 29.
+
+
+LaTeX Warning: Reference `tab:MonitHygro' on page 2 undefined on input line 29.
+
+
+
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 30.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1645,11 +1678,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
 
 [2 <./images/11-hygrothermal/5a.pdf>]
-Underfull \hbox (badness 10000) in alignment at lines 55--55
-[][][][] 
- []
+
+Package natbib Warning: Citation `Saraiva2025b' on page 3 undefined on input line 69.
 
 
+
+
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 70.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1659,12 +1694,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
 
 [3 <./images/11-hygrothermal/InsideBook1.PNG> <./images/11-hygrothermal/InsideBook2.PNG>]
-<images/11-hygrothermal/Model.pdf, id=127, 1124.2pt x 924.45375pt>
+
+Package natbib Warning: Citation `Saraiva2025b' on page 4 undefined on input line 71.
+
+
+LaTeX Warning: Reference `fig:HygroEnergyPlus' on page 4 undefined on input line 73.
+
+<images/11-hygrothermal/Model.pdf, id=88, 1124.2pt x 924.45375pt>
 File: images/11-hygrothermal/Model.pdf Graphic file (type pdf)
 <use images/11-hygrothermal/Model.pdf>
-Package pdftex.def Info: images/11-hygrothermal/Model.pdf  used on input line 74.
+Package pdftex.def Info: images/11-hygrothermal/Model.pdf  used on input line 77.
 (pdftex.def)             Requested size: 374.63625pt x 308.06116pt.
 
+Package natbib Warning: Citation `Gaspar1994' on page 4 undefined on input line 82.
+
+
+LaTeX Warning: Reference `tab:Envelope' on page 4 undefined on input line 82.
+
+
+Package natbib Warning: Citation `LNEC_ITE50_2006' on page 4 undefined on input line 82.
+
+
+
+
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 151.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1674,17 +1727,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
 
 [4 <./images/11-hygrothermal/Model.pdf>]
-<images/11-hygrothermal/TourismWinter.png, id=153, 758.616pt x 434.277pt>
+
+LaTeX Warning: Reference `tab:Envelope' on page 5 undefined on input line 154.
+
+
+LaTeX Warning: Reference `fig:Tourism' on page 5 undefined on input line 156.
+
+<images/11-hygrothermal/TourismWinter.png, id=106, 758.616pt x 434.277pt>
 File: images/11-hygrothermal/TourismWinter.png Graphic file (type png)
 <use images/11-hygrothermal/TourismWinter.png>
-Package pdftex.def Info: images/11-hygrothermal/TourismWinter.png  used on input line 187.
+Package pdftex.def Info: images/11-hygrothermal/TourismWinter.png  used on input line 160.
 (pdftex.def)             Requested size: 315.48538pt x 180.60593pt.
-<images/11-hygrothermal/TourismSummer.png, id=154, 758.616pt x 434.277pt>
+<images/11-hygrothermal/TourismSummer.png, id=107, 758.616pt x 434.277pt>
 File: images/11-hygrothermal/TourismSummer.png Graphic file (type png)
 <use images/11-hygrothermal/TourismSummer.png>
-Package pdftex.def Info: images/11-hygrothermal/TourismSummer.png  used on input line 189.
+Package pdftex.def Info: images/11-hygrothermal/TourismSummer.png  used on input line 162.
 (pdftex.def)             Requested size: 315.48538pt x 180.60593pt.
 
+
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 168.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1696,6 +1758,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [5]
 
 
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 178.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 18.18796pt, for example:
 (fancyhdr)                \setlength{\headheight}{18.18796pt}.
@@ -1704,15 +1769,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6 <./images/11-hygrothermal/TourismWinter.png> <./images/11-hygrothermal/TourismSummer.png>]
 
-LaTeX Warning: Reference `tab:ValidationThresholdsTH' on page 7 undefined on input line 210.
+Package natbib Warning: Citation `Huerto-Cardenas2020' on page 7 undefined on input line 181.
 
 
-LaTeX Warning: Reference `tab:ValidationThresholdsTH' on page 7 undefined on input line 226.
+Package natbib Warning: Citation `Huerto-Cardenas2020' on page 7 undefined on input line 181.
 
 
-LaTeX Warning: Reference `tab:ValidationThresholdsTH' on page 7 undefined on input line 228.
+Package natbib Warning: Citation `Huerto-Cardenas2020' on page 7 undefined on input line 181.
 
 
+Package natbib Warning: Citation `Huerto-Cardenas2020' on page 7 undefined on input line 181.
+
+
+Package natbib Warning: Citation `Huerto-Cardenas2020' on page 7 undefined on input line 183.
+
+
+Package natbib Warning: Citation `Huerto-Cardenas2020' on page 7 undefined on input line 183.
+
+
+LaTeX Warning: Reference `tab:ValidationThresholdsTH' on page 7 undefined on input line 183.
+
+
+LaTeX Warning: Reference `tab:ValidationThresholdsTH' on page 7 undefined on input line 207.
+
+
+Package natbib Warning: Citation `Huerto-Cardenas2020' on page 7 undefined on input line 207.
+
+
+
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 208.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1723,9 +1809,45 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7]
 
-LaTeX Warning: Reference `tab:ValidationThresholdsTH' on page 8 undefined on input line 239.
+Package natbib Warning: Citation `Raji2018' on page 8 undefined on input line 209.
 
-) (Sections/4_Conclusion
+
+LaTeX Warning: Reference `tab:ValidationThresholdsTH' on page 8 undefined on input line 209.
+
+
+Package natbib Warning: Citation `Kilian2013' on page 8 undefined on input line 211.
+
+
+Package natbib Warning: Citation `Kilian2013' on page 8 undefined on input line 211.
+
+
+LaTeX Warning: Reference `eq:Qv' on page 8 undefined on input line 211.
+
+
+Package natbib Warning: Citation `UNI1999' on page 8 undefined on input line 220.
+
+
+LaTeX Warning: Reference `tab:ValidationThresholdsTH' on page 8 undefined on input line 220.
+
+
+Package natbib Warning: Citation `Huerto-Cardenas2020' on page 8 undefined on input line 224.
+
+
+Package natbib Warning: Citation `Huerto-Cardenas2020' on page 8 undefined on input line 226.
+
+) (Sections/3_Results
+
+LaTeX Warning: Reference `tab:ModelValidation' on page 8 undefined on input line 7.
+
+
+Overfull \hbox (1.03528pt too wide) in paragraph at lines 35--35
+ []|[]| 
+ []
+
+
+
+
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 37.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1734,21 +1856,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
 
-[8])
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 197.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 197.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 197.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 197.
+[8]
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
-
- []
+LaTeX Warning: Reference `tab:ModelValidation' on page 9 undefined on input line 38.
 
 
+LaTeX Warning: Reference `subsect:Ventilation' on page 9 undefined on input line 38.
+
+
+LaTeX Warning: Reference `tab:ModelValidation' on page 9 undefined on input line 42.
+
+
+LaTeX Warning: Reference `fig:ValidationTimeSeries' on page 9 undefined on input line 50.
+
+
+LaTeX Warning: Reference `AppF:hygrothermal_validation' on page 9 undefined on input line 50.
+
+
+
+
+LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 51.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1758,11 +1885,83 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 248--248
 
- []
+LaTeX Warning: File `images/11-hygrothermal/GS1_2018_ACH0.45.pdf' not found on input line 54.
 
-(template.bbl)
+
+Sections/3_Results:54: Package pdftex.def Error: File `images/11-hygrothermal/GS1_2018_ACH0.45.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ...ges/11-hygrothermal/GS1_2018_ACH0.45.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+LaTeX Warning: File `images/11-hygrothermal/GS1_2021_ACH0.45.pdf' not found on input line 56.
+
+
+Sections/3_Results:56: Package pdftex.def Error: File `images/11-hygrothermal/GS1_2021_ACH0.45.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...ges/11-hygrothermal/GS1_2021_ACH0.45.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Float too large for page by 100.90631pt on input line 59.
+
+
+LaTeX Warning: Reference `fig:ValidationTimeSeries' on page 10 undefined on input line 61.
+
+
+Package natbib Warning: Citation `Yang2015' on page 10 undefined on input line 61.
+
+
+Package natbib Warning: Citation `Pallin2017' on page 10 undefined on input line 61.
+
+
+Package natbib Warning: Citation `Huerto-Cardenas2020' on page 10 undefined on input line 63.
+
+
+LaTeX Warning: Reference `fig:TourismImpact' on page 10 undefined on input line 69.
+
+
+LaTeX Warning: File `images/11-hygrothermal/TourismImpact.pdf' not found on input line 73.
+
+
+Sections/3_Results:73: Package pdftex.def Error: File `images/11-hygrothermal/TourismImpact.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 ...{images/11-hygrothermal/TourismImpact.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:TourismImpact' on page 10 undefined on input line 78.
+
+
+
+
+LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 81.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1771,9 +1970,283 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
 
-[10] 
+[10]
+
+Package natbib Warning: Citation `Aste2019' on page 11 undefined on input line 92.
+
+
+Package natbib Warning: Citation `Lucchi2018' on page 11 undefined on input line 94.
+
+
+LaTeX Warning: Reference `fig:TourismAlternativeEntrance' on page 11 undefined on input line 98.
+
+
+LaTeX Warning: Reference `fig:TourismAlternativeEntrance' on page 11 undefined on input line 98.
+
+
+
+
+LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 99.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[11]
+
+LaTeX Warning: File `images/11-hygrothermal/SimulationAlternativeEntrance.pdf' not found on input line 102.
+
+
+Sections/3_Results:102: Package pdftex.def Error: File `images/11-hygrothermal/SimulationAlternativeEntrance.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 ...ermal/SimulationAlternativeEntrance.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/11-hygrothermal/B&C.png, id=159, 1723.43875pt x 628.3475pt>
+File: images/11-hygrothermal/B&C.png Graphic file (type png)
+<use images/11-hygrothermal/B&C.png>
+Package pdftex.def Info: images/11-hygrothermal/B&C.png  used on input line 104.
+(pdftex.def)             Requested size: 315.48538pt x 115.01523pt.
+
+LaTeX Warning: Reference `fig:Sensible' on page 12 undefined on input line 113.
+
+
+LaTeX Warning: Reference `fig:Latent' on page 12 undefined on input line 113.
+
+<images/11-hygrothermal/SensibleHeat.png, id=160, 1042.659pt x 650.43pt>
+File: images/11-hygrothermal/SensibleHeat.png Graphic file (type png)
+<use images/11-hygrothermal/SensibleHeat.png>
+Package pdftex.def Info: images/11-hygrothermal/SensibleHeat.png  used on input line 117.
+(pdftex.def)             Requested size: 315.48538pt x 196.79785pt.
+<images/11-hygrothermal/MixingSensible.png, id=161, 1043.316pt x 650.649pt>
+File: images/11-hygrothermal/MixingSensible.png Graphic file (type png)
+<use images/11-hygrothermal/MixingSensible.png>
+Package pdftex.def Info: images/11-hygrothermal/MixingSensible.png  used on input line 118.
+(pdftex.def)             Requested size: 315.48538pt x 196.74498pt.
+<images/11-hygrothermal/LatentHeat.png, id=162, 1042.878pt x 650.43pt>
+File: images/11-hygrothermal/LatentHeat.png Graphic file (type png)
+<use images/11-hygrothermal/LatentHeat.png>
+Package pdftex.def Info: images/11-hygrothermal/LatentHeat.png  used on input line 125.
+(pdftex.def)             Requested size: 315.48538pt x 196.75816pt.
+<images/11-hygrothermal/MixingLatent.png, id=163, 1043.097pt x 650.43pt>
+File: images/11-hygrothermal/MixingLatent.png Graphic file (type png)
+<use images/11-hygrothermal/MixingLatent.png>
+Package pdftex.def Info: images/11-hygrothermal/MixingLatent.png  used on input line 126.
+(pdftex.def)             Requested size: 315.48538pt x 196.71846pt.
+
+LaTeX Warning: Reference `fig:Sensible' on page 12 undefined on input line 132.
+
+
+LaTeX Warning: Reference `fig:Latent' on page 12 undefined on input line 132.
+
+
+LaTeX Warning: Reference `fig:MaximumDailyFluctuations' on page 12 undefined on input line 132.
+
+<images/11-hygrothermal/Temp_Fluctuation.png, id=164, 890.454pt x 577.065pt>
+File: images/11-hygrothermal/Temp_Fluctuation.png Graphic file (type png)
+<use images/11-hygrothermal/Temp_Fluctuation.png>
+Package pdftex.def Info: images/11-hygrothermal/Temp_Fluctuation.png  used on input line 136.
+(pdftex.def)             Requested size: 256.32848pt x 166.11182pt.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 136.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 136.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 136.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 136.
+<images/11-hygrothermal/RH_Fluctuation.png, id=165, 890.016pt x 577.941pt>
+File: images/11-hygrothermal/RH_Fluctuation.png Graphic file (type png)
+<use images/11-hygrothermal/RH_Fluctuation.png>
+Package pdftex.def Info: images/11-hygrothermal/RH_Fluctuation.png  used on input line 138.
+(pdftex.def)             Requested size: 256.32848pt x 166.44334pt.
+
+LaTeX Warning: Reference `fig:ThermalLoads' on page 12 undefined on input line 145.
+
+
+LaTeX Warning: File `images/11-hygrothermal/ThermalLoads_TimeSeries_WithTourism.pdf' not found on input line 149.
+
+
+Sections/3_Results:149: Package pdftex.def Error: File `images/11-hygrothermal/ThermalLoads_TimeSeries_WithTourism.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 .../ThermalLoads_TimeSeries_WithTourism.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:ThermalLoads' on page 12 undefined on input line 154.
+
+
+
+
+LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 155.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[12]) (Sections/4_Conclusion)
+
+
+LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 201.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--259
+
+ []
+
+(template.bbl
+
+
+LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 8.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[14])
+
+Package natbib Warning: There were undefined citations.
+
+
+
+
+LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 328.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[15]
+
+
+LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 328.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[16]
+
+
+LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 328.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[17]
+
+
+LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 328.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[18 <./images/11-hygrothermal/B&C.png>]
+
+
+LaTeX Warning: Reference `LastPage' on page 19 undefined on input line 328.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[19 <./images/11-hygrothermal/SensibleHeat.png> <./images/11-hygrothermal/MixingSensible.png>]
+
+
+LaTeX Warning: Reference `LastPage' on page 20 undefined on input line 328.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[20 <./images/11-hygrothermal/LatentHeat.png> <./images/11-hygrothermal/MixingLatent.png>]
+
+
+LaTeX Warning: Reference `LastPage' on page 21 undefined on input line 328.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[21 <./images/11-hygrothermal/Temp_Fluctuation.png> <./images/11-hygrothermal/RH_Fluctuation.png>]
+
+
+LaTeX Warning: Reference `LastPage' on page 22 undefined on input line 328.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.18796pt}.
+
+[22] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(template.aux)
+(template.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
@@ -1782,21 +2255,33 @@ L3 programming layer <2025-10-09>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 807C71D0718397A6B4AE5D1C324CB0D1;590.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `template.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `template.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  E93B7B7A4B6DC2BAC449871445ED637C;1361.
+
+Package lastpage Warning: Rerun to get the references right on input line 328.
+
  ) 
 Here is how much of TeX's memory you used:
- 39332 strings out of 468080
- 765651 string characters out of 5435842
- 1233541 words of memory out of 5000000
- 66835 multiletter control sequences out of 15000+600000
- 707233 words of font info for 445 fonts, out of 8000000 for 9000
+ 39649 strings out of 468080
+ 778164 string characters out of 5435842
+ 1236634 words of memory out of 5000000
+ 67062 multiletter control sequences out of 15000+600000
+ 711162 words of font info for 484 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,16n,121p,5142b,1166s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Acer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi375\ecss0800.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (10 pages, 2249831 bytes).
+ 123i,17n,121p,5142b,1337s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Acer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\Acer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi375\ecss0800.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on template.pdf (22 pages, 4835155 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 121957 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 126552 words of extra memory for PDF output out of 128383 (max. 10000000)
 

@@ -73,14 +73,25 @@
 \input{Aux_Files/Units}
 \usepackage{subcaption}
 \usepackage{textgreek}
+\usepackage[table]{xcolor}
+
+%% SET TABLE CELL COLOR
+\newcommand{\SetCell}[1]{\cellcolor{#1}}
 
 % DEFINE ABBREVIATIONS
 \newcommand{\etal}{\textit{et al}.}
 \newcommand{\ie}{\textit{i}.\textit{e}.}
 \newcommand{\eg}{\textit{e}.\textit{g}.}
 \newcommand{\etc}{\textit{etc}.}
-\newcommand{\temp}{\textit{TEMP}}
+\newcommand{\temp}{\textit{T\textsubscript{a}}}
 \newcommand{\rh}{\textit{RH}}
+\newcommand{\rmse}{\textit{RMSE}}
+\newcommand{\varfi}{\textit{F\textsubscript{i}}}
+\newcommand{\varqv}{\textit{Q\textsubscript{v}}}
+\newcommand{\vardetercoef}{\textit{R\textsuperscript{2}}}
+\newcommand{\ic}{\textit{IC}}
+\newcommand{\ach}{\textit{ACH}}
+
 
 %=================================================================
 % Full title of the paper (Capitalized)
@@ -183,7 +194,7 @@ $^{2}$ \quad Low Carbon \& Resource Efficiency, R\&D, Instituto de Soldadura e Q
 \input{Sections/2_Method}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESULTS AND DISCUSSION
-% \input{Sections/3_Results}
+\input{Sections/3_Results}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONCLUSION
 \input{Sections/4_Conclusion}

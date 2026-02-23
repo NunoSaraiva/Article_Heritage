@@ -32,7 +32,10 @@ Given the gradual acquisition and installation of paper hygrometers within the l
     \centering
     \caption{Summary of the two tasks regarding the different type of monitoring.}
     
-    \begin{tabularx}{\textwidth}{llll}
+    \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X
+                            >{\centering\arraybackslash}X
+                            >{\centering\arraybackslash}X
+                            >{\centering\arraybackslash}X}
     
     \toprule
     \textbf{Equipment} & \textbf{Period} & \textbf{Location} & \textbf{Time step} \\ \hline
@@ -78,43 +81,13 @@ Although the three floors of the Portuguese library were modelled, the focus of 
 
 The archaeological research team of the University of Coimbra was contacted regarding the building envelope. However, the lack of information regarding the envelope assemblies of the historic building was limiting. Accordingly, the building envelope changed from century to century depending on the floor. Thus, the only documented research found indicated assumptions about the construction elements of the building envelope~\cite{Gaspar1994}, which was adopted for the current work. The constructions, composed of different materials, are defined in Tab.~\ref{tab:Envelope}, where the thermal properties for the main envelope elements are provided. The materials' database consulted was based on the Portuguese national construction practices (ITE50~\cite{LNEC_ITE50_2006}). 
 
-%       \begin{longtblr}[
-%           caption={Building envelope construction and respective thermal properties.},
-%           note{a} = {Includes superficial resistances (with film).},
-%           note{b} = {Between Noble Floor and the attic on the roof.},
-%           note{c} = {No film was considered for internal mass elements.},
-%           label={tab:Envelope},
-%       ] {
-%           colspec={X[2,l]X[2.5,l]X[1,l]},
-%           width=0.95\textwidth,
-%       }
-%          \hline
-%          \textbf{Element} & {\textbf{Description} \\ (Outside to inside)} & {\textbf{\gls{uvalue}}\TblrNote{a} \\ W.m\textsuperscript{-2}.K\textsuperscript{-1}}\\ \hline
-%          \textbf{Opaque exterior} & & \\ \hline
-%          External roof & {Clay tile, 3 cm \\ Wood, 4 cm} & 2.11 \\
-%          External wall & {Mortar, 2 cm \\ Limestone, 50 cm \\ Half-timbered, 100 cm \\ Limestone, 50 cm \\ Mortar, 2 cm} & 0.49 \\
-%          External floor & Limestone, 50 cm & 1.93 \\ 
-%          External door & {Wood, 10 cm} & 1.16 \\ \hline
-%          \textbf{Opaque interior} & & & \\ \hline
-%          Wood ceiling\TblrNote{b} & {Wood, 4 cm \\ Mortar, 2 cm} & 1.76 \\
-%          Internal wall & {Mortar, 2 cm \\ Limestone, 15 cm \\ Mortar, 2 cm} & 2.67 \\ 
-%          Internal door & {Wood, 4 cm} & 2.67 \\ 
-%          Internal ceiling and floor & {Mortar, 2 cm \\ Limestone, 50 cm \\ Mortar, 2 cm} & 1.59\\ 
-%          Internal door & {Wood, 4 cm} & 1.90 \\ \hline
-%          \textbf{Fenestration} & & \\ \hline
-%          {External fenestration \\ (windows)} & {Simple glass, 0.4 cm} & {6.01} \\
-%          {Internal fenestration \\ (diffusers)} & {Curtains, 0.1 cm} & {3.19} \\ \hline
-%          \textbf{Internal Mass} & & \\ \hline
-%          Carpet & {Carpet, 2 cm} & 3.00\TblrNote{c} \\ 
-%          Bookshelves & {Wood, 10 cm \\ Air gap, 10 cm \\ Wood, 4 cm} & 0.75\TblrNote{c} \\ \hline
-
-%       \end{longtblr}
-
 \begin{table}[H]
 \caption{Building envelope construction and respective thermal properties.\label{tab:Envelope}}
 	%\begin{adjustwidth}{-\extralength}{0cm}
 		%\begin{tabularx}{\fulllength}{CCC}
-    \begin{tabularx}{\textwidth}{CCC}
+    \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X
+                            >{\centering\arraybackslash}X
+                            >{\centering\arraybackslash}X}
 			\toprule
 			\multirow[m]{2}{*}{\textbf{Element}}	& \textbf{Description}	& \textbf{\textit{U-Value}}~\textsuperscript{a)}\\
       	& (Outside to inside)	& W.m\textsuperscript{-2}.K\textsuperscript{-1}\\
@@ -210,18 +183,26 @@ The validation becomes, then, an essential milestone in the conservation methodo
 Considering that the most used existing standards (\eg, ASHRAE Guideline 14) deal with model validation based on energy-related parameters, \citeauthor{Huerto-Cardenas2020}~(\citeyear{Huerto-Cardenas2020}) identified the most suitable recommended thresholds for validation using microclimatic parameters, which were proposed in two levels -- the results are summarised in Tab.~\ref{tab:ValidationThresholdsTH}.
 
 
-% \begin{table}[H]
-% %\centering
-% \caption{Validation thresholds according to microclimatic parameters. \textit{RMSE} -- Root mean square error; \textit{IC} -- Inequality coefficient.}
-% \label{tab:ValidationThresholdsTH}
-% \begin{tabularx}{\textwidth}{lll}
-% \toprule
-% \textbf{Validation} & \temp{} & \rh{} \\ \hline
-% \textbf{Level 1} & \begin{tabular}[l]{@{}l@{}}\gls{rmse}~$\leq$~1~\temperature\\ $\pm$~1~\temperature, \gls{fi}~$\geq$~95~\percentage\end{tabular} & \begin{tabular}[l]{@{}l@{}}\gls{rmse}~$\leq$~5~\percentage\\  $\pm$~5~\percentage,  \gls{fi}~$\geq$~95~\percentage\\ 0.95~$\leq$~\gls{qv}~$\leq$~1.10 \end{tabular} \\ \hline
-% \textbf{Level 2} & \begin{tabular}[l]{@{}l@{}}\gls{rmse}~$\leq$~2~\temperature \\ $\pm$~2~\temperature, \gls{fi}~$\geq$~95~\percentage \end{tabular} & \begin{tabular}[l]{@{}l@{}} \gls{rmse}~$\leq$~10~\percentage \\ $\pm$~10~\percentage,  \gls{fi}~$\geq$~95~\percentage \\ 0.75~$\leq$~\gls{qv}~$\leq$~0.95 \\ 1.10~$\leq$~\gls{qv}~$\leq$~1.5 \end{tabular} \\ \hline
-% \textbf{Basis} & \begin{tabular}[l]{@{}l@{}} \gls{r2}~\textgreater~0.75\\ \gls{ic}~\textless~0.25\end{tabular} & \begin{tabular}[l]{@{}l@{}} \gls{r2}~\textgreater~0.75\\ \gls{ic}~\textless~0.25\end{tabular} \\ \bottomrule
-% \end{tabularx}
-% \end{table}
+\begin{table}[H]
+\centering
+\caption{Validation thresholds according to microclimatic parameters. \textit{RMSE} -- Root mean square error; \textit{IC} -- Inequality coefficient.}
+\label{tab:ValidationThresholdsTH}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X
+                            >{\centering\arraybackslash}X
+                            >{\centering\arraybackslash}X}
+\toprule
+\textbf{Validation} & \textbf{\temp{}} & \textbf{\rh{}} \\ \hline
+\multirow[m]{3}{*}{Level 1} & \rmse~$\leq$~1~\temperature & \rmse~$\leq$~5~\percentage \\
+                            & $\pm$~1~\temperature, \varfi~$\geq$~95~\percentage & $\pm$~5~\percentage,  \varfi~$\geq$~95~\percentage \\
+                            &  & 0.95~$\leq$~\varqv~$\leq$~1.10 \\ \hline
+\multirow[m]{4}{*}{Level 2} & \rmse~$\leq$~2~\temperature & \rmse~$\leq$~10~\percentage \\
+                            & $\pm$~2~\temperature, \varfi~$\geq$~95~\percentage & $\pm$~10~\percentage,  \varfi~$\geq$~95~\percentage \\
+                            &  & 0.75~$\leq$~\varqv~$\leq$~0.95 \\ 
+                            &  & 1.10~$\leq$~\varqv~$\leq$~1.5 \\ \hline     
+\multirow[m]{2}{*}{Base} & \vardetercoef~\textgreater~0.75 & \vardetercoef~\textgreater~0.75 \\
+                         & \ic~\textless~0.25 & \ic~\textless~0.25 \\\bottomrule
+\end{tabularx}
+\end{table}
 
 Tab.~\ref{tab:ValidationThresholdsTH} summarises the results found in literature~\cite{Huerto-Cardenas2020}, which has some metrics that go beyond the typical approach of validation. When working for preservation of collections in heritage buildings, some authors included analyses of frequency of residuals (\textit{F\textsubscript{i}}) and the differences in terms of daily fluctuations between measurements and predictions (\textit{Q\textsubscript{v}}).
 
